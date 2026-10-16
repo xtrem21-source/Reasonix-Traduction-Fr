@@ -1,0 +1,9 @@
+# Normalize line endings so the repository behaves the same on Windows,
+# macOS and Linux — without CRLF churn in every diff.
+* text=auto eol=lf
+
+# Never rewrite these as text.
+*.png binary
+*.ico binary
+*.woff binary
+*.woff2 binary

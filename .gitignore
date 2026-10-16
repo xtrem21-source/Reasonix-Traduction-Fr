@@ -1,0 +1,42 @@
+# ---------------------------------------------------------------------------
+# Reasonix-Translate — files that must never be committed
+# ---------------------------------------------------------------------------
+
+# Generated working directory (backups, extracted bundles, rebuilt archives…)
+work/
+
+# Original Reasonix sources fetched locally for string extraction.
+# They are downloaded at runtime and never redistributed by this project.
+sources/
+
+# Embedded third-party tools (fetch/install on demand)
+tools/
+node_modules/
+
+# Explicit safety nets: if any of these ever appear at the top level, ignore it.
+backup/
+asar_orig/
+asar_fr/
+app_fr.asar
+go_messages_en.json
+extracted/
+fr_parts/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Environment / secrets
+.env
+.env.*
+
+# OS and editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
