@@ -1,4 +1,4 @@
-# Contributing to Reasonix-Translate
+# Contributing to Reasonix-Traduction-Fr
 
 Thanks for helping. This project exists so that people who don't read Chinese or
 English can use Reasonix Studio. The most valuable contribution is **a
@@ -41,8 +41,8 @@ This is the main workflow. Replace `xx` with your language code (`es`, `de`,
 ### 1. Fork and clone
 
 ```bash
-git clone https://github.com/xtrem21-source/Reasonix-Translate.git
-cd Reasonix-Translate
+git clone https://github.com/xtrem21-source/Reasonix-Traduction-Fr.git
+cd Reasonix-Traduction-Fr
 ```
 
 ### 2. Install Reasonix Studio

@@ -68,4 +68,4 @@ First public release.
   [`LICENSE-REASONIX.md`](LICENSE-REASONIX.md).
 - Unofficial and unaffiliated with upstream.
 
-[0.1.0]: https://github.com/xtrem21-source/Reasonix-Translate/releases/tag/v0.1.0
+[0.1.0]: https://github.com/xtrem21-source/Reasonix-Traduction-Fr/releases/tag/v0.1.0

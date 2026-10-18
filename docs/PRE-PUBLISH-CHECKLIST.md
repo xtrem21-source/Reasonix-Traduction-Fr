@@ -93,7 +93,7 @@ Get-ChildItem -Recurse -File | Where-Object {
 ## 7. The commit contains what you think it does
 
 ```bash
-cd Reasonix-Translate
+cd Reasonix-Traduction-Fr
 git init
 git add .
 git status --porcelain
@@ -110,7 +110,7 @@ Then, before the first push:
 ```bash
 git add -A
 git commit -m "Initial release v0.1.0"
-git remote add origin https://github.com/xtrem21-source/Reasonix-Translate.git
+git remote add origin https://github.com/xtrem21-source/Reasonix-Traduction-Fr.git
 git push -u origin main
 ```
 

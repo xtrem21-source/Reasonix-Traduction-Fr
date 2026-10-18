@@ -63,7 +63,7 @@ layer upstream is the better fix, which is why I say so in the repo.
 run this against a Tauri build. The mapping above is by analogy from how Tauri
 bundles its frontend, and I would rather say that plainly than imply otherwise.
 
-**Repo:** https://github.com/xtrem21-source/Reasonix-Translate — the method is
+**Repo:** https://github.com/xtrem21-source/Reasonix-Traduction-Fr — the method is
 documented; the scripts are plain Python, no build step. It targets the Electron
 desktop app of [DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix)
 (Reasonix Studio **2.40.0**). It is unofficial and unaffiliated with the app it

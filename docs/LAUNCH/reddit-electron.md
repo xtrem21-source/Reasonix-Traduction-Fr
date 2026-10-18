@@ -72,7 +72,7 @@ a minimal `localStorage`/`navigator` stub, boots it in the target language, and
 calls the translate function on real keys. It is about 40 lines and it is the
 only reason I trust the result.
 
-Repo (unofficial, unaffiliated): https://github.com/xtrem21-source/Reasonix-Translate.
+Repo (unofficial, unaffiliated): https://github.com/xtrem21-source/Reasonix-Traduction-Fr.
 It targets the Electron desktop app of
 [DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix), on Reasonix
 Studio **2.40.0**. But the transferable bit is the shape:

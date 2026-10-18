@@ -78,7 +78,7 @@ as a legitimate response instead of a workaround. This is my attempt at both.
 The tool is a demonstration in French, but it is not French-specific: it is a
 pipeline anyone can point at their own language.
 
-Repo: https://github.com/xtrem21-source/Reasonix-Translate. It translates the UI
+Repo: https://github.com/xtrem21-source/Reasonix-Traduction-Fr. It translates the UI
 of [DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) (Reasonix
 Studio), pinned to **2.40.0**; unofficial and unaffiliated. Happy to talk about
 the licensing line specifically — I am not

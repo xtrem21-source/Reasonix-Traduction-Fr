@@ -8,7 +8,7 @@ what must **never** be committed.
 ## What is committed
 
 ```
-Reasonix-Translate/
+Reasonix-Traduction-Fr/
 ├── README.md                  # English overview (the front door)
 ├── README.fr.md               # French overview
 ├── LICENSE                    # MIT — for this project

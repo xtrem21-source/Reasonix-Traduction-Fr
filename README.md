@@ -1,8 +1,8 @@
-# Reasonix-Translate
+# Reasonix-Traduction-Fr
 
 **Translate the Reasonix Studio interface into your language.**
 
-Reasonix-Translate is a small, readable toolchain that lets you translate the
+Reasonix-Traduction-Fr is a small, readable toolchain that lets you translate the
 desktop interface of **Reasonix Studio** — the desktop app of the
 [**DeepSeek-Reasonix**](https://github.com/esengine/DeepSeek-Reasonix) project —
 into any language, without rebuilding the application and without its source code.
@@ -40,7 +40,7 @@ speaks neither language is left out — not because the software is closed, but
 because its translations are compiled into the application and there is no
 public way to add one.
 
-Reasonix-Translate fills that gap. It reads the interface's own string catalogs —
+Reasonix-Traduction-Fr fills that gap. It reads the interface's own string catalogs —
 the application's translation sources — so you can translate the parts you
 actually see, in a plain text file, and apply them locally. No Reasonix code is
 redistributed: the catalogs are downloaded to your machine, and the translation is
@@ -105,8 +105,8 @@ step and for fetching source strings).
 > `work/backup/`, but a copy of the install folder is never wasted.
 
 ```bash
-git clone https://github.com/xtrem21-source/Reasonix-Translate.git
-cd Reasonix-Translate
+git clone https://github.com/xtrem21-source/Reasonix-Traduction-Fr.git
+cd Reasonix-Traduction-Fr
 ```
 
 **1. Fetch and extract the strings**
@@ -247,7 +247,7 @@ Honest list, so nobody is surprised:
 ## Repository layout
 
 ```
-Reasonix-Translate/
+Reasonix-Traduction-Fr/
 ├── README.md                  # this file (English)
 ├── README.fr.md               # French translation
 ├── LICENSE                    # MIT — for this project

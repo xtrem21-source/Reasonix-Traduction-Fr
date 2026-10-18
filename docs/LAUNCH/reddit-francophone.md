@@ -31,7 +31,7 @@ d'erreur, page de démarrage, menu clic droit, menu de la zone de notification
 
 ```
 git clone <lien du dépôt>
-cd Reasonix-Translate
+cd Reasonix-Traduction-Fr
 python3 scripts/inject_fr.py        # applique le français
 python3 scripts/verify_installed.py # vérifie que ça a bien pris
 ```
@@ -65,7 +65,7 @@ langue que le français, l'outil sait faire — et une traduction partielle est
 utile : toute chaîne non traduite s'affiche simplement en chinois, jamais comme
 un vide.
 
-Dépôt : https://github.com/xtrem21-source/Reasonix-Translate. Il traduit
+Dépôt : https://github.com/xtrem21-source/Reasonix-Traduction-Fr. Il traduit
 l'interface de [DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix)
 (Reasonix Studio), version ciblée **2.40.0** ; non officiel, non affilié à
 l'amont. Les retours, corrections de traduction et nouvelles langues sont les

@@ -61,7 +61,7 @@ installation and only the translation travels. And the README credits the author
 carries their license verbatim, and states non-affiliation in the first screen.
 If a maintainer told me to stop, I would.
 
-Repo's here: https://github.com/xtrem21-source/Reasonix-Translate. It translates
+Repo's here: https://github.com/xtrem21-source/Reasonix-Traduction-Fr. It translates
 the desktop UI of [DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix)
 (Reasonix Studio), and it is pinned to Reasonix Studio **2.40.0** — the build I
 verified the patch anchors against. Unofficial, not affiliated with upstream. Ask
