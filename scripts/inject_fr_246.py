@@ -1,41 +1,39 @@
-"""Inject the French dictionary into Reasonix Studio 2.46.0.
+"""Injecte le dictionnaire francais dans l'app Reasonix Studio v2.46.0.
 
-Bundle structure in 2.46.0 (changed from 2.40.0):
+Structure du bundle v2.46.0 (different de la v2.40) :
+  _={zh:{},en:{...}}          // dictionnaires
+  v=`zh`, y=_.zh, b=`rx-lang` // langue courante, dict actif, cle de stockage
+  function x(){...}           // boot : v=S(localStorage.getItem(b)), y=_[v], <html lang>
+  function S(e){...}          // resolve : n'accepte que zh/en
+  function C(){...}           // machine : w(locale) ? zh : en
+  function w(e){...}          // isChinese
+  function E(e){...}          // adopt (change de langue + reload)
+  function D(e,t){...}        // translate : y[e]
+  function O(...)             // forme plurielle
 
-  _={zh:{},en:{...}}          # dictionaries
-  v=`zh`, y=_.zh, b=`rx-lang` # current language, active dict, storage key
-  function x(){...}           # boot: v=S(localStorage.getItem(b)), y=_[v], <html lang>
-  function S(e){...}          # resolve: only accepts zh/en
-  function C(){...}           # machine: w(locale) ? zh : en
-  function w(e){...}          # isChinese
-  function E(e){...}          # adopt (switch language + reload)
-  function D(e,t){...}        # translate: y[e]
-  function O(...)             # plural form
+Patchs (asserts uniques) :
+  R1  D consulte globalThis.__FR quand la langue est `fr`
+  R2  S accepte `fr`
+  R3  <html lang> gere `fr`
+  R4  E ne reecrit pas un choix `fr` (sinon le kernel le remet a en/zh)
+  R5  C detecte une machine francaise
+  APP globalThis.__FR = {...}  et  _.fr = globalThis.__FR
+Plus, dans Settings-*.js, ajout de l'option [`fr`,`Français`].
 
-Patches (each anchor asserted once):
-
-  R1  D consults globalThis.__FR when the language is `fr`
-  R2  S accepts `fr`
-  R3  <html lang> handles `fr`
-  R4  E does not overwrite an explicit `fr` choice (the kernel would reset it)
-  R5  C detects a French machine
-  APP globalThis.__FR = {...}  and  _.fr = globalThis.__FR
-
-Plus, in Settings-*.js, add the [`fr`,`Français`] option.
-
-Usage: python3 scripts/inject_fr_246.py [--dry-run] [--restore] [dict.json]
+Usage : python3 inject_fr_246.py [--dry-run] [--restore] [dict.json]
 """
 import os, re, sys, glob, json, shutil, datetime
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import paths
+from log_246 import log
 
 RES = paths.app_assets()
 BACKUP_DIR = paths.BACKUP
 HERE = os.path.dirname(os.path.abspath(__file__))
-DEFAULT_DICT = paths.FR_DICT
+DEFAULT_DICT = os.path.join(HERE, 'fr_dict_246.json')
 
-BT = '`'  # backtick, for readable anchors
+BT = '`'  # backtick, pour lisibilite des motifs
 
 
 def patches():
@@ -61,7 +59,7 @@ def patches():
 def find(glob_pat):
     hits = [p for p in glob.glob(os.path.join(RES, glob_pat))]
     if len(hits) != 1:
-        raise SystemExit(f'expected 1 file for {glob_pat}, found {len(hits)}: {hits}')
+        raise SystemExit(f'attendu 1 fichier pour {glob_pat}, trouve {len(hits)}: {hits}')
     return hits[0]
 
 
@@ -78,21 +76,21 @@ def apply(path, reps, dry):
     orig = s
     for name, old, new in reps:
         if s.count(new) == 1:
-            print(f'  ok {name} (already applied)')
+            print(f'  ok {name} (deja applique)')
             continue
         c = s.count(old)
         if c != 1:
-            print(f'  !! {name}: {c} occurrence(s) of {old[:50]!r} -> SKIPPED')
+            print(f'  !! {name}: {c} occurrence(s) de {old[:50]!r} -> IGNORE')
             continue
         s = s.replace(old, new, 1)
         print(f'  ok {name}')
     if s == orig:
-        print('  (no change)')
+        print('  (aucun changement)')
         return False
     if not dry:
         b = backup(path)
         open(path, 'w', encoding='utf-8').write(s)
-        print('  backup:', os.path.basename(b))
+        print('  sauvegarde:', os.path.basename(b))
     return True
 
 
@@ -109,53 +107,56 @@ def main():
     settings = find('Settings-*.js')
 
     if restore:
+        # Restaure les deux bundles depuis la plus recente sauvegarde qui les concerne.
         for p in (i18n, settings):
             name = os.path.basename(p)
             baks = sorted([b for b in os.listdir(BACKUP_DIR) if b.endswith('__' + name)])
             if not baks:
-                print('  no backup for', name)
+                print('  aucune sauvegarde pour', name)
                 continue
             src = os.path.join(BACKUP_DIR, baks[-1])
             shutil.copy2(src, p)
-            print(f'  restored {name} from {baks[-1]}')
+            print(f'  restaure {name} depuis {baks[-1]}')
         return
 
     fr = {}
     if os.path.isfile(dict_path):
         fr = json.load(open(dict_path, encoding='utf-8'))
-    print(f'dictionary: {os.path.basename(dict_path)} -> {len(fr)} entries')
+    print(f'Dictionnaire: {os.path.basename(dict_path)} -> {len(fr)} entrees')
     if not fr:
-        print('  (empty dictionary: the mechanism is patched, nothing is translated)')
+        print('  (dictionnaire vide : le mecanisme sera patche mais rien ne sera traduit)')
 
-    print('\n== i18n bundle ==', os.path.basename(i18n))
+    print('\n== bundle i18n ==', os.path.basename(i18n))
     reps = patches()
     changed = apply(i18n, reps, dry)
     if not dry:
         s = open(i18n, encoding='utf-8').read()
-        # Reliable marker: R1 already contains "globalThis.__FR", but never ";globalThis.__FR=".
+        # Marqueur fiable : R1 contient deja "globalThis.__FR" mais jamais ";globalThis.__FR=".
         if ';globalThis.__FR=' not in s:
             js = json.dumps(fr, ensure_ascii=False)
             s = s + f'\n;globalThis.__FR={js};_.fr=globalThis.__FR;\n'
             open(i18n, 'w', encoding='utf-8').write(s)
-            print('  ok APP: globalThis.__FR + _.fr added')
+            print('  ok APP: globalThis.__FR + _.fr ajoutes')
         else:
             new_code = ';globalThis.__FR=' + json.dumps(fr, ensure_ascii=False) + ';_.fr=globalThis.__FR;'
             s2 = re.sub(r';globalThis\.__FR=\{.*?\};_\.fr=globalThis\.__FR;',
                         lambda m: new_code, s, count=1, flags=re.S)
             open(i18n, 'w', encoding='utf-8').write(s2)
-            print('  ok APP: dictionary updated')
+            print('  ok APP: dictionnaire mis a jour')
 
-    print('\n== Settings bundle ==', os.path.basename(settings))
+    print('\n== bundle Settings ==', os.path.basename(settings))
+    # Idempotent : on n'ajoute l'option que si elle n'y est pas deja.
     sel_fr = f'[{BT}fr{BT},{BT}Français{BT}]'
     s = open(settings, encoding='utf-8').read()
     if sel_fr in s:
-        print('  French option already present, nothing to do')
+        print('  option Français deja presente, rien a faire')
     else:
         old_sel = f'[{BT}zh{BT},{BT}中文{BT}],[{BT}en{BT},{BT}英文{BT}]'
         new_sel = f'[{BT}zh{BT},{BT}中文{BT}],[{BT}en{BT},{BT}英文{BT}],{sel_fr}'
         apply(settings, [('R6_selector', old_sel, new_sel)], dry)
 
-    print('\nDone.' + (' (dry-run: nothing written)' if dry else ''))
+    print('\nTermine.' + (' (dry-run : rien ecrit)' if dry else ''))
+    log('dictionnaire', f'{len(fr)} entrees' + (' (dry-run)' if dry else ''))
 
 
 if __name__ == '__main__':

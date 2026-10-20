@@ -10,6 +10,7 @@ import glob, os, shutil, sys, datetime
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import paths
+from log_246 import log
 
 ASSETS = paths.app_assets()
 BACKUP = paths.BACKUP
@@ -70,3 +71,4 @@ shutil.copy2(p, dst)
 open(p, 'w', encoding='utf-8').write(s)
 print(f'{len(changed)} libelle(s) corrige(s)')
 print('sauvegarde :', os.path.basename(dst))
+log('libelles-outils', f'{len(changed)} corriges, sauvegarde {os.path.basename(dst)}')
