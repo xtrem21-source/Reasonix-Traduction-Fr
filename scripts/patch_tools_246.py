@@ -3,7 +3,8 @@
 Les descriptions sont affichees telles quelles par l'interface (`e.description`),
 sans passer par le dictionnaire : elles sont compilees dans le binaire Go.
 Ce script ajoute une table EN -> FR dans le bundle Settings et fait passer
-l'affichage par cette table.
+l'affichage par une fonction de traduction tolerante aux espaces et aux
+variantes de prefixe.
 
 Usage: python3 patch_tools_246.py [--dry-run]
 """
@@ -27,30 +28,49 @@ dry = '--dry-run' in sys.argv
 table = json.load(open(TABLE, encoding='utf-8'))
 print('descriptions FR :', len(table))
 
-# 1. Faire passer l'affichage par la table.
-OLD = 'title:e.description,children:e.description}'
-NEW = ('title:globalThis.__TOOLDESC?.[e.description]??e.description,'
-       'children:globalThis.__TOOLDESC?.[e.description]??e.description}')
+# 1. Faire passer l'affichage par la fonction de traduction.
+#    Deux formes possibles : le lookup simple (version precedente) ou rien.
+OLD_LOOKUP = 'title:globalThis.__TOOLDESC?.[e.description]??e.description,children:globalThis.__TOOLDESC?.[e.description]??e.description}'
+OLD_RAW = 'title:e.description,children:e.description}'
+NEW = ('title:globalThis.__TOOLFR?.(e.description)??e.description,'
+       'children:globalThis.__TOOLFR?.(e.description)??e.description}')
 changed = False
 if s.count(NEW) == 1:
-    print('  affichage : deja patche')
-elif s.count(OLD) == 1:
-    s = s.replace(OLD, NEW, 1)
+    print('  affichage : deja patche (fonction)')
+elif s.count(OLD_LOOKUP) == 1:
+    s = s.replace(OLD_LOOKUP, NEW, 1)
+    print('  affichage : lookup -> fonction')
+    changed = True
+elif s.count(OLD_RAW) == 1:
+    s = s.replace(OLD_RAW, NEW, 1)
     print('  affichage : patche')
     changed = True
 else:
-    raise SystemExit(f'ancre introuvable (attendu 1, trouve {s.count(OLD)}): {OLD!r}')
+    raise SystemExit(f'ancre introuvable (lookup={s.count(OLD_LOOKUP)}, brut={s.count(OLD_RAW)})')
 
-# 2. Ajouter / mettre a jour la table globale.
+# 2. Remplacer / ajouter la table et la fonction.
 js = json.dumps(table, ensure_ascii=False)
+block = (
+    ';globalThis.__TOOLDESC=' + js + ';'
+    'globalThis.__TOOLFR=(s)=>{'
+    'const d=globalThis.__TOOLDESC;'
+    'if(!s)return s;'
+    'if(d[s])return d[s];'
+    'const n=(x)=>String(x||"").replace(/\\s+/g," ").trim();'
+    'const k=n(s);'
+    'for(const [a,b] of Object.entries(d)){if(n(a)===k)return b}'
+    'for(const [a,b] of Object.entries(d)){const p=n(a);if(p.slice(0,60)===k.slice(0,60))return b}'
+    'return s};'
+)
 if ';globalThis.__TOOLDESC=' in s:
-    s2 = re.sub(r';globalThis\.__TOOLDESC=\{.*?\};\s*$', ';globalThis.__TOOLDESC=' + js + ';', s, count=1, flags=re.S)
+    s2 = re.sub(r';globalThis\.__TOOLDESC=\{.*?\};\s*(?:globalThis\.__TOOLFR=.*?;\s*)?$',
+                lambda m: block, s, count=1, flags=re.S)
     if s2 != s:
         s = s2
         changed = True
     print('  table : mise a jour')
 else:
-    s = s + '\n;globalThis.__TOOLDESC=' + js + ';\n'
+    s = s + '\n' + block + '\n'
     print('  table : ajoutee')
     changed = True
 
