@@ -54,7 +54,7 @@ Verify each of these is **absent** from the tree that will be committed:
       in a dedicated section.
 - [ ] Both READMEs describe how to **add a new language**.
 - [ ] Both READMEs list the **known limitations** honestly.
-- [ ] `CHANGELOG.md` has a `0.2.0` entry dated today.
+- [ ] `CHANGELOG.md` has a `2.46.0` entry dated today.
 - [ ] Every relative link in the READMEs resolves to a file that exists.
 - [ ] `docs/` files referenced from the READMEs all exist.
 
@@ -113,7 +113,7 @@ Then, before the first push:
 
 ```bash
 git add -A
-git commit -m "Release v0.2.0 — Reasonix Studio 2.46.0"
+git commit -m "Release v2.46.0 — Reasonix Studio 2.46.0"
 git remote add origin https://github.com/xtrem21-source/Reasonix-Traduction-Fr.git
 git push -u origin main
 ```

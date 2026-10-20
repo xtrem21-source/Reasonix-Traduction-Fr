@@ -7,9 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [0.2.0] — 2026-10-20
+## [2.46.0] — 2026-10-20
 
-Support for **Reasonix Studio 2.46.0**.
+Support for **Reasonix Studio 2.46.0**. This is the major release: the interface
+bundle changed shape, 946 new strings were added, and the native patch anchors
+were re-verified. It supersedes the short-lived `v0.2.0` tag, which pointed to
+the same content under the old numbering.
 
 ### Added
 
@@ -98,5 +101,5 @@ First public release.
   [`LICENSE-REASONIX.md`](LICENSE-REASONIX.md).
 - Unofficial and unaffiliated with upstream.
 
-[0.2.0]: https://github.com/xtrem21-source/Reasonix-Traduction-Fr/releases/tag/v0.2.0
+[2.46.0]: https://github.com/xtrem21-source/Reasonix-Traduction-Fr/releases/tag/v2.46.0
 [0.1.0]: https://github.com/xtrem21-source/Reasonix-Traduction-Fr/releases/tag/v0.1.0
