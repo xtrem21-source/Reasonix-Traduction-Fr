@@ -7,10 +7,10 @@ before filing a bug — several "bugs" are described here by design.
 
 ## 1. It is tied to one version of Reasonix Studio
 
-**Target: Reasonix Studio 2.40.0.**
+**Target: Reasonix Studio 2.46.0.**
 
 The interface bundles are *minified* and their filenames are *content-hashed*
-(`i18n-dyxISsoS.js`). Strings are translated by matching anchors inside that
+(`i18n-BBt-pvJM.js`). Strings are translated by matching anchors inside that
 minified code. When Reasonix ships a new version, the code is minified
 differently and the anchors move.
 

@@ -7,6 +7,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.2.0] — 2026-10-20
+
+Support for **Reasonix Studio 2.46.0**.
+
+### Added
+
+- **Reasonix Studio 2.46.0 support**: the interface bundle changed shape since
+  2.40.0 (dictionaries and helpers were renamed: `h` → `_`, `T` → `D`, `x` → `C`,
+  `w` → `E`). New injectors match the 2.46.0 anchors:
+  `scripts/inject_fr_246.py` (web interface) and `scripts/asar_246.py` (native
+  surfaces), with `scripts/setup_asar_orig_246.py` and
+  `scripts/verify_asar_246.py`.
+- **946 new strings translated**, bringing `translations/fr.json` to
+  **4 797 entries** (3 866 carried over from 0.1.0 + 946 new).
+- `scripts/check_placeholders.py` now validates the final dictionary directly
+  (`translations/fr.json`), not the intermediate work files.
+
+### Changed
+
+- `README.md` / `README.fr.md`: supported version is now **2.46.0**
+  (bundles `i18n-BBt-pvJM.js`, `Settings-DVNS8HMO.js`).
+- The 2.40.0 scripts are kept in `scripts/` for anyone still on that build.
+
+### Known limitations
+
+- Targets **Reasonix Studio 2.46.0**. A newer release may move the anchors;
+  injection fails visibly (never silently) when that happens.
+
+---
+
 ## [0.1.0] — 2026-10-16
 
 First public release.
@@ -68,4 +98,5 @@ First public release.
   [`LICENSE-REASONIX.md`](LICENSE-REASONIX.md).
 - Unofficial and unaffiliated with upstream.
 
+[0.2.0]: https://github.com/xtrem21-source/Reasonix-Traduction-Fr/releases/tag/v0.2.0
 [0.1.0]: https://github.com/xtrem21-source/Reasonix-Traduction-Fr/releases/tag/v0.1.0

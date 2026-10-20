@@ -41,8 +41,12 @@ Each script does one thing and can be read end to end.
 | `translate_api.py` | *(optional)* Batch-translates via an AI API (DeepSeek by default). |
 | `merge_fr.py` | Merges the translated pieces and reports missing / unknown keys. |
 | `check_placeholders.py` | Fails if any `{placeholder}` was lost, renamed, or added. |
-| `inject_fr.py` | Applies the dictionary to the web-interface bundles and enables the language. |
-| `patch_asar.py` | Produces a French-patched copy of the native Electron strings (startup page, context menu, dialogs, tray). |
+| `inject_fr.py` | Applies the dictionary to the 2.40.0 web-interface bundles and enables the language. |
+| `inject_fr_246.py` | Same for the **2.46.0** bundles (the internal names changed: `_`, `D`, `S`, `C`, `E`). |
+| `patch_asar.py` | Produces a French-patched copy of the 2.40.0 native Electron strings (startup page, context menu, dialogs, tray). |
+| `asar_246.py` | Same for **2.46.0** — patch, repack, verify and install in one step. |
+| `setup_asar_orig_246.py` | Extracts a pristine 2.46.0 `app.asar` into `work/asar_orig_246/`. |
+| `verify_asar_246.py` | Verifies the 2.46.0 rebuilt archive before installation. |
 | `repack_asar.py` | Rebuilds `app.asar` from the patched copy. |
 | `install_asar.py` | Installs the rebuilt `app.asar`, keeping a dated backup. |
 | `verify_installed.py` | Loads the **installed** bundle in Node and proves it translates. |
@@ -66,7 +70,7 @@ One file per language: `translations/<code>.json`.
 - **Values** — the translation.
 - **Placeholders** — `{n}`, `{name}`, `{alt}`… must survive unchanged.
 
-`fr.json` is complete (3 866 entries) and doubles as the format reference.
+`fr.json` is complete (4 797 entries) and doubles as the format reference.
 
 ### `work/`
 

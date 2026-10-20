@@ -20,7 +20,7 @@ to verify, not to assume.
 - [ ] Each of the 5 drafts in `docs/LAUNCH/` names **DeepSeek-Reasonix**, links to
       the upstream repository, and states the target version.
 - [ ] Both READMEs explain how to **check the installed version** before applying
-      the patch, and that `2.40.0` is not the latest upstream.
+      the patch, and that `2.46.0` is the version the anchors were verified against.
 
 ## 2. No Reasonix code in the repository
 
@@ -50,11 +50,11 @@ Verify each of these is **absent** from the tree that will be committed:
 
 - [ ] `README.md` is in **English** and is the primary entry point.
 - [ ] `README.fr.md` is in **French** and matches the English version in content.
-- [ ] Both READMEs name the **supported version** (Reasonix Studio **2.40.0**)
+- [ ] Both READMEs name the **supported version** (Reasonix Studio **2.46.0**)
       in a dedicated section.
 - [ ] Both READMEs describe how to **add a new language**.
 - [ ] Both READMEs list the **known limitations** honestly.
-- [ ] `CHANGELOG.md` has a `0.1.0` entry dated today.
+- [ ] `CHANGELOG.md` has a `0.2.0` entry dated today.
 - [ ] Every relative link in the READMEs resolves to a file that exists.
 - [ ] `docs/` files referenced from the READMEs all exist.
 
@@ -62,6 +62,10 @@ Verify each of these is **absent** from the tree that will be committed:
 
 - [ ] `python3 scripts/extract_i18n.py` succeeds on a real installation.
 - [ ] `python3 scripts/inject_fr.py` applies cleanly (all anchors match once).
+- [ ] `python3 scripts/inject_fr_246.py --dry-run` reports **6/6** anchors found
+      (2.46.0).
+- [ ] `python3 scripts/setup_asar_orig_246.py` extracts a pristine archive.
+- [ ] `python3 scripts/asar_246.py --no-install` reports `VERDICT: OK`.
 - [ ] `python3 scripts/verify_installed.py` returns `VERDICT: OK`.
 - [ ] `python3 scripts/verify_asar_installed.py` returns `VERDICT: OK`.
 - [ ] `python3 scripts/check_placeholders.py` exits 0 on `translations/fr.json`.
@@ -109,7 +113,7 @@ Then, before the first push:
 
 ```bash
 git add -A
-git commit -m "Initial release v0.1.0"
+git commit -m "Release v0.2.0 — Reasonix Studio 2.46.0"
 git remote add origin https://github.com/xtrem21-source/Reasonix-Traduction-Fr.git
 git push -u origin main
 ```
