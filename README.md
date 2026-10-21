@@ -145,6 +145,32 @@ Restart Reasonix Studio. In **Settings → Language**, choose **Français**.
 
 ---
 
+## Voice input (optional)
+
+This release also ships an **optional voice-input module**: a dictation button in
+the chat bar, using the Web Speech API for capture and Gemini for transcription
+(BYOK — you bring your own key).
+
+The unified launcher `MENU-REASONIX.bat` offers **three modes**, so you can apply
+either part on its own:
+
+| Choice | What it patches |
+|---|---|
+| `1` — French | Web interface + native context menu, nothing else |
+| `2` — Microphone | Dictation button only |
+| `3` — Both | French **and** dictation |
+| `4` — Quit | Nothing |
+
+From a terminal: `MENU-REASONIX.bat fr`, `MENU-REASONIX.bat mic`, or
+`MENU-REASONIX.bat both` (useful for scripts and CI).
+
+The module lives in `Reasonix-Voice-Input-publish/` and is **independent from the
+translation**: it can be installed alone on an untranslated Reasonix Studio, or
+together with the French pack. Each action is logged under `logs/`, and the
+patched files are backed up with a timestamp.
+
+---
+
 ## Adding a new language
 
 The workflow is the same for every language. Replace `xx` with your language

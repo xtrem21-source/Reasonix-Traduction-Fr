@@ -24,8 +24,11 @@ available unchanged.
   `scripts/asar_patches.json`.
 - **160 new strings translated**, bringing `translations/fr.json` to
   **4 957 entries** (4 797 carried over from 2.46.0 + 160 new).
-- An optional voice-input module is shipped in the companion working folder
-  (`Reasonix-Voice-Input-publish/`), independent from the translation itself.
+- An optional voice-input module is shipped in `Reasonix-Voice-Input-publish/`,
+  driven by `MENU-REASONIX.bat`, which offers three modes: **French only**,
+  **microphone only**, or **both**. The module is independent from the
+  translation and can be installed alone, alongside the French pack, or not at
+  all.
 
 ### Changed
 

@@ -148,6 +148,32 @@ Redémarrez Reasonix Studio. Dans **Paramètres → Langue**, choisissez **Fran�
 
 ---
 
+## Dictée vocale (en option)
+
+Cette version intègre aussi un **module de dictée vocale optionnel** : un bouton
+micro dans la barre du chat, qui utilise l'API Web Speech pour la capture et
+Gemini pour la transcription (BYOK — vous fournissez votre clé).
+
+Le lanceur unifié `MENU-REASONIX.bat` propose **trois modes**, pour n'appliquer
+qu'une partie si vous le souhaitez :
+
+| Choix | Ce qui est patché |
+|---|---|
+| `1` — Français | Interface web + menu contextuel natif, rien d'autre |
+| `2` — Micro | Bouton de dictée uniquement |
+| `3` — Les deux | Français **et** dictée |
+| `4` — Quitter | Rien |
+
+En ligne de commande : `MENU-REASONIX.bat fr`, `MENU-REASONIX.bat mic` ou
+`MENU-REASONIX.bat both` (utile pour les scripts et la CI).
+
+Le module vit dans `Reasonix-Voice-Input-publish/` et reste **indépendant de la
+traduction** : il peut s'installer seul sur un Reasonix Studio non traduit, ou
+avec le pack français. Chaque action est journalisée dans `logs/`, et les
+fichiers patchés sont sauvegardés avec un horodatage.
+
+---
+
 ## Ajouter une nouvelle langue
 
 Le flux est identique pour toutes les langues. Remplacez `xx` par le code de votre
