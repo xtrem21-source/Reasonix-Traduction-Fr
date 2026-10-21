@@ -43,8 +43,10 @@ Each script does one thing and can be read end to end.
 | `check_placeholders.py` | Fails if any `{placeholder}` was lost, renamed, or added. |
 | `inject_fr.py` | Applies the dictionary to the 2.40.0 web-interface bundles and enables the language. |
 | `inject_fr_246.py` | Same for the **2.46.0** bundles (the internal names changed: `_`, `D`, `S`, `C`, `E`). |
+| `patch247.py` | Applies the dictionary to the **2.47.0** bundles (`i18n-DS26LhWq.js`, `Settings-B_4tuZ4i.js`) and the startup `index.html`. |
 | `patch_asar.py` | Produces a French-patched copy of the 2.40.0 native Electron strings (startup page, context menu, dialogs, tray). |
 | `asar_246.py` | Same for **2.46.0** — patch, repack, verify and install in one step. |
+| `patch_asar247.py` | Same for **2.47.0** — driven by `asar_patches.json`, idempotent, installs atomically. |
 | `setup_asar_orig_246.py` | Extracts a pristine 2.46.0 `app.asar` into `work/asar_orig_246/`. |
 | `verify_asar_246.py` | Verifies the 2.46.0 rebuilt archive before installation. |
 | `repack_asar.py` | Rebuilds `app.asar` from the patched copy. |
@@ -70,7 +72,7 @@ One file per language: `translations/<code>.json`.
 - **Values** — the translation.
 - **Placeholders** — `{n}`, `{name}`, `{alt}`… must survive unchanged.
 
-`fr.json` is complete (4 797 entries) and doubles as the format reference.
+`fr.json` is complete (4 957 entries) and doubles as the format reference.
 
 ### `work/`
 

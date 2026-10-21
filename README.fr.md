@@ -200,18 +200,18 @@ outil est **lié à une version précise de Reasonix Studio**.
 
 | Composant | Version |
 |---|---|
-| Reasonix Studio | **2.46.0** — la version sur laquelle l'outil a été développé et testé |
-| Release amont | [`studio-v2.46.0`](https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.46.0) (2026-10-20) |
-| Bundles de l'interface | `i18n-BBt-pvJM.js`, `Settings-DVNS8HMO.js` (les noms changent à chaque version) |
+| Reasonix Studio | **2.47.0** — la version sur laquelle l'outil a été développé et testé |
+| Release amont | `studio-v2.47.0` (2026-10-21) |
+| Bundles de l'interface | `i18n-DS26LhWq.js`, `Settings-B_4tuZ4i.js` (les noms changent à chaque version) |
 
 **Vérifiez votre version avant d'appliquer.** Ouvrez le panneau *À propos* de
 l'application, ou lisez le champ `version` de `resources/app.asar` dans le dossier
 d'installation. (Les sources amont déclarent `0.0.0` et injectent la vraie version
 à la compilation : le binaire installé est le seul endroit où ce numéro existe.)
 
-- **`2.46.0` est la version sur laquelle les ancres ont été vérifiées.**
+- **`2.47.0` est la version sur laquelle les ancres ont été vérifiées.**
   Reasonix Studio publie fréquemment ; une version plus récente peut déplacer
-  les ancres. Au moment de la rédaction, la version amont était `2.46.0`.
+  les ancres. Au moment de la rédaction, la version amont était `2.47.0`.
 - Sur une **autre version**, l'extraction fonctionne en général encore (elle lit
   les catalogues de chaînes, pas le bundle compilé), mais **l'injection peut
   échouer** : les ancres peuvent avoir bougé. L'injecteur signale alors les motifs
@@ -220,9 +220,9 @@ d'installation. (Les sources amont déclarent `0.0.0` et injectent la vraie vers
   comme correspondant exactement une fois ; une correspondance ratée est signalée
   et ignorée.
 - Quand une version plus récente casse les ancres, il suffit de mettre à jour les
-  motifs dans `scripts/inject_fr_246.py` et `scripts/asar_246.py` (les scripts
-  2.40.0 sont conservés pour référence). Les contributions pour les versions plus
-  récentes sont bienvenues.
+  motifs dans `scripts/patch247.py` et `scripts/patch_asar247.py` (les scripts
+  2.46.0 et 2.40.0 sont conservés pour référence). Les contributions pour les
+  versions plus récentes sont bienvenues.
 
 ---
 
@@ -237,7 +237,7 @@ Liste honnête, pour que personne ne soit surpris :
   notifications) embarque ses chaînes **compilées dans un binaire** et sort du
   périmètre. Seule une petite portion de quelques surfaces natives est concernée.
   Voir `docs/LIMITATIONS.md`.
-- **Lié à Reasonix Studio 2.46.0** pour l'injection — vérifiez votre version
+- **Lié à Reasonix Studio 2.47.0** pour l'injection — vérifiez votre version
   avant d'appliquer (voir ci-dessus).
 - **Le français est la seule traduction complète** fournie. Les autres langues
   sont des contributions de la communauté.

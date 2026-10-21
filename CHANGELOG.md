@@ -7,6 +7,42 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.47.0] — 2026-10-21
+
+Support for **Reasonix Studio 2.47.0**. The web bundle is now
+`i18n-DS26LhWq.js` and the settings bundle `Settings-B_4tuZ4i.js`; the native
+`app.asar` anchors were re-verified. The 2.46.0 tag and its release stay
+available unchanged.
+
+### Added
+
+- **Reasonix Studio 2.47.0 support**:
+  `scripts/patch247.py` (web interface: i18n bundle, Settings language
+  selector, `index.html` startup language) and `scripts/patch_asar247.py`
+  (8 native files: `uilang.js`, `starting.js`, `editmenu.js`, `hostexit.js`,
+  `shelllog.js`, `packagegrants.js`, `main.js`, `tray.js`), driven by
+  `scripts/asar_patches.json`.
+- **160 new strings translated**, bringing `translations/fr.json` to
+  **4 957 entries** (4 797 carried over from 2.46.0 + 160 new).
+- An optional voice-input module is shipped in the companion working folder
+  (`Reasonix-Voice-Input-publish/`), independent from the translation itself.
+
+### Changed
+
+- `README.md` / `README.fr.md`: supported version is now **2.47.0**
+  (bundles `i18n-DS26LhWq.js`, `Settings-B_4tuZ4i.js`).
+- The 2.46.0 and 2.40.0 scripts are kept in `scripts/` for anyone still on
+  those builds.
+- Both patches are idempotent: a re-run detects an already-patched bundle and
+  reports it instead of rewriting.
+
+### Known limitations
+
+- Targets **Reasonix Studio 2.47.0**. A newer release may move the anchors;
+  injection fails visibly (never silently) when that happens.
+
+---
+
 ## [2.46.0] — 2026-10-20
 
 Support for **Reasonix Studio 2.46.0**. This is the major release: the interface

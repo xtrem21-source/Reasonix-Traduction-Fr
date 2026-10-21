@@ -196,18 +196,18 @@ patched by matching anchors inside that minified code. As a result, this tool is
 
 | Component | Version |
 |---|---|
-| Reasonix Studio | **2.46.0** — the build this tool was developed and tested against |
-| Upstream release | [`studio-v2.46.0`](https://github.com/esengine/DeepSeek-Reasonix/releases/tag/studio-v2.46.0) (2026-10-20) |
-| Interface bundles | `i18n-BBt-pvJM.js`, `Settings-DVNS8HMO.js` (names change every release) |
+| Reasonix Studio | **2.47.0** — the build this tool was developed and tested against |
+| Upstream release | `studio-v2.47.0` (2026-10-21) |
+| Interface bundles | `i18n-DS26LhWq.js`, `Settings-B_4tuZ4i.js` (names change every release) |
 
 **Check your version before applying.** Open the application's *About* panel, or
 read the `version` field of `resources/app.asar` in the install folder. (The
 upstream source declares `0.0.0` and injects the real version at build time, so
 the built artifact is the only place the number lives.)
 
-- **`2.46.0` is the build the patch anchors were verified against.** Reasonix
+- **`2.47.0` is the build the patch anchors were verified against.** Reasonix
   Studio ships frequently; a newer release may move the anchors. At the time of
-  writing, `2.46.0` was the current upstream release.
+  writing, `2.47.0` was the current upstream release.
 - On a **different version**, extraction usually still works (it reads the string
   catalogs, not the compiled bundle), but **injection may fail**: the anchor
   patterns may have moved, and the injector will report which patterns it could
@@ -215,8 +215,9 @@ the built artifact is the only place the number lives.)
 - The scripts **do not** silently mis-apply: every patch is asserted to match
   exactly once, and a failed match is reported and skipped.
 - When a newer Reasonix version breaks the anchors, the fix is to update the
-  patterns in `scripts/inject_fr_246.py` and `scripts/asar_246.py` (the 2.40.0
-  scripts are kept for reference). Contributions for newer versions are welcome.
+  patterns in `scripts/patch247.py` and `scripts/patch_asar247.py` (the 2.46.0
+  and 2.40.0 scripts are kept for reference). Contributions for newer versions
+  are welcome.
 
 ---
 
@@ -231,7 +232,7 @@ Honest list, so nobody is surprised:
   notifications) ships its strings **compiled into a binary** and is out of
   scope. Only the English portion of a few native surfaces is affected. See
   `docs/LIMITATIONS.md`.
-- **Tied to Reasonix Studio 2.46.0** for injection (see above).
+- **Tied to Reasonix Studio 2.47.0** for injection (see above).
 - **French is the only complete translation** shipped. Other languages are
   community contributions.
 - **Partial translations are expected and safe.** A missing key falls back to
