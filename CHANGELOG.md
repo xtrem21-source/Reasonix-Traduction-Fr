@@ -7,6 +7,45 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.49.0] — 2026-10-23
+
+Support for **Reasonix Studio 2.49.0**. The web bundle is now
+`i18n-BR2QJ_aY.js` and the settings bundle `Settings-Bbgyi4OO.js`. The 2.48.0
+release is deliberately skipped: no work was published for it. The 2.47.0 tag
+and its release stay available unchanged.
+
+### Added
+
+- **Reasonix Studio 2.49.0 support**: `scripts/patch249.py` (web interface:
+  i18n bundle, Settings language selector, `index.html` startup language) and
+  its launcher `Francisation_2.49.bat`.
+- **77 new strings translated**, bringing `translations/fr.json` to
+  **5 034 entries** (4 957 carried over from 2.47.0 + 77 new). No translation
+  was changed or lost: all 4 957 previous entries are byte-identical.
+- `patch249.py` reads the install directory from `REASONIX_STUDIO_DIR`, so a
+  Reasonix Studio installed outside `%LOCALAPPDATA%\Programs` (for example
+  `J:\Reasonix Studio`) patches correctly.
+
+### Changed
+
+- `README.md` / `README.fr.md` / `LISEZ-MOI.md`: supported version is now
+  **2.49.0** (bundles `i18n-BR2QJ_aY.js`, `Settings-Bbgyi4OO.js`).
+- The 2.46.0 and 2.47.0 scripts are kept in `scripts/` for anyone still on
+  those builds.
+- `patch249.py` is idempotent: on an already-patched bundle it refreshes the
+  dictionary instead of re-applying the anchors, and it refuses to patch if a
+  pattern no longer matches exactly once.
+
+### Known limitations
+
+- Targets **Reasonix Studio 2.49.0**. A newer release may move the anchors;
+  injection fails visibly (never silently) when that happens.
+- **The native `app.asar` step is not ported to 2.49.** 2.49 users get the fully
+  translated web interface; the native surfaces (startup page, context menu,
+  tray) remain untranslated until `patch_asar249.py` exists.
+
+---
+
 ## [2.47.0] — 2026-10-21
 
 Support for **Reasonix Studio 2.47.0**. The web bundle is now
