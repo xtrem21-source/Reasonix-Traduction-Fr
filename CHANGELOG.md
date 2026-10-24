@@ -7,6 +7,42 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.50.0] — 2026-10-24
+
+Support for **Reasonix Studio 2.50.0**. This release required rewriting every
+pattern: the minifier of 2.50 rotated the variable names of the i18n bundle.
+
+### Added
+
+- **`Francisation_2.50.bat`**, the launcher for this release, with the same
+  variables and the same checks as its predecessors (`REASONIX_STUDIO_DIR`,
+  Python fallback, running-instance guard).
+- **`scripts/patch250.py`**: same pipeline as 2.49, with the six patterns
+  rewritten for the new names.
+- **`scripts/force_auto_fr.py`**: forces the automatic language detection to
+  answer `fr`. Without it, French does not hold on 2.50 — see *Changed*.
+- **`Reasonix-FR-2.50.zip`**: complete, self-contained package for this version.
+
+### Changed
+
+- **The i18n variable names rotated in 2.50.** Current language moved from `y`
+  to `b`, the current dictionary from `b` to `x`, the dictionary collection from
+  `v` to `y`, and the translation function from `O` to `k` (exported as `o`).
+  The 2.49 patterns do not match this build and fail loudly instead of writing.
+- **The language selector is no longer durable.** Reasonix Studio 2.50 resets
+  its language setting to empty at startup and falls back to auto-detection.
+  French holds because auto-detection is forced to `fr`, not because the choice
+  is respected. Choosing English in the settings will not persist.
+
+### Known issues
+
+- Two settings labels, `Ask` and `MCP · Skills`, are not translated: their
+  source strings changed in 2.50 and no longer match the dictionary.
+- The root cause of the language reset — which component writes the empty value
+  — is not identified. It is most likely inside the host executable.
+
+---
+
 ## [2.49.0] — 2026-10-23
 
 Support for **Reasonix Studio 2.49.0**. The web bundle is now
@@ -181,18 +217,3 @@ First public release.
 
 [2.46.0]: https://github.com/xtrem21-source/Reasonix-Traduction-Fr/releases/tag/v2.46.0
 [0.1.0]: https://github.com/xtrem21-source/Reasonix-Traduction-Fr/releases/tag/v0.1.0
-
-## 2.50.0 — 2026-10-24
-
-Support de Reasonix Studio 2.50.0.
-
-Le minifieur de cette version a **renomme les variables** de l'i18n : langue courante
-\y\ -> \\, dictionnaire courant \\ -> \x\, recueil \\ -> \y\, fonction de
-traduction \O\ -> \k\ (exportee en \o\). Les six motifs ont ete reecrits
-(\scripts/patch250.py\).
-
-Nouveau : \scripts/force_auto_fr.py\. L'application remet son reglage de langue a vide
-au demarrage et retombe en auto-detection ; ce script force l'auto-detection a repondre
-\r\. C'est ce qui rend le francais effectif en 2.50.
-
-Complet : \Reasonix-FR-2.50.zip\ (script, config, dictionnaire 5 047 entrees, outils).
