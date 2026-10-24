@@ -181,3 +181,18 @@ First public release.
 
 [2.46.0]: https://github.com/xtrem21-source/Reasonix-Traduction-Fr/releases/tag/v2.46.0
 [0.1.0]: https://github.com/xtrem21-source/Reasonix-Traduction-Fr/releases/tag/v0.1.0
+
+## 2.50.0 — 2026-10-24
+
+Support de Reasonix Studio 2.50.0.
+
+Le minifieur de cette version a **renomme les variables** de l'i18n : langue courante
+\y\ -> \\, dictionnaire courant \\ -> \x\, recueil \\ -> \y\, fonction de
+traduction \O\ -> \k\ (exportee en \o\). Les six motifs ont ete reecrits
+(\scripts/patch250.py\).
+
+Nouveau : \scripts/force_auto_fr.py\. L'application remet son reglage de langue a vide
+au demarrage et retombe en auto-detection ; ce script force l'auto-detection a repondre
+\r\. C'est ce qui rend le francais effectif en 2.50.
+
+Complet : \Reasonix-FR-2.50.zip\ (script, config, dictionnaire 5 047 entrees, outils).
