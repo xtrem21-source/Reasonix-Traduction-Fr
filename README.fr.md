@@ -1,4 +1,7 @@
-# Reasonix-Traduction-Fr
+﻿# Reasonix-Traduction-Fr
+
+<p align="center"><img src="assets/logo.png" width="128" alt="Reasonix Traduction FR"></p>
+
 
 **Traduisez l'interface de Reasonix Studio dans votre langue.**
 
@@ -364,3 +367,4 @@ approuvé par, ni sponsorisé par** le projet
 Vous pouvez utiliser, modifier et redistribuer cet outil et les traductions qu'il
 contient, à condition de conserver la mention de copyright et la notice de licence
 de Reasonix.
+

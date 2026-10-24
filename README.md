@@ -1,4 +1,7 @@
-# Reasonix-Traduction-Fr
+﻿# Reasonix-Traduction-Fr
+
+<p align="center"><img src="assets/logo.png" width="128" alt="Reasonix Traduction FR"></p>
+
 
 **Translate the Reasonix Studio interface into your language.**
 
@@ -355,3 +358,4 @@ endorsed by, or sponsored by** the
 
 You may use, modify, and redistribute this tool and the translations it
 contains, provided you keep the copyright notice and the Reasonix license notice.
+
