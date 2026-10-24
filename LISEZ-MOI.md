@@ -17,7 +17,7 @@ Le paquet **détecte** les fichiers à patcher au lieu de coder leurs noms en du
 ```text
 1. Fermer complètement Reasonix Studio
    (icône de la zone de notification → Quitter)
-2. Double-cliquer Francisation_2.49.bat
+2. Double-cliquer Francisation_2.50.bat
 3. Rouvrir Reasonix Studio
 4. Paramètres → Apparence → Langue → Français
 ```
@@ -28,7 +28,7 @@ Si Reasonix Studio n'est pas au chemin Windows standard (`%LOCALAPPDATA%\Program
 
 ```text
 set "REASONIX_STUDIO_DIR=J:\Reasonix Studio"
-Francisation_2.49.bat
+Francisation_2.50.bat
 ```
 
 ## Ce qui est traduit
@@ -58,13 +58,13 @@ Recopie le fichier voulu à sa place :
 
 ## Après une mise à jour de Reasonix
 
-Les bundles changent de nom : relance simplement `Francisation_2.49.bat`. Le script retrouve les nouveaux fichiers et les patche. Si un motif a changé, il s'arrête en le disant — il ne patch jamais à moitié.
+Les bundles changent de nom : relance simplement `Francisation_2.50.bat`. Le script retrouve les nouveaux fichiers et les patche. Si un motif a changé, il s'arrête en le disant — il ne patch jamais à moitié.
 
 ## Contenu du paquet
 
 ```text
 Reasonix-Traduction-Fr\
-├─ Francisation_2.49.bat     lanceur 2.49
+├─ Francisation_2.50.bat     lanceur 2.49
 ├─ Francisation_2.47.bat     lanceur 2.47 (conservé)
 ├─ LISEZ-MOI.md
 ├─ translations\
