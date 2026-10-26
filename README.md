@@ -225,18 +225,18 @@ patched by matching anchors inside that minified code. As a result, this tool is
 
 | Component | Version |
 |---|---|
-| Reasonix Studio | **2.50.0** — the build this tool was developed and tested against |
-| Upstream release | `studio-v2.50.0` (2026-10-23) |
-| Interface bundles | `i18n-a81XocSl.js`, `Settings-PYycLyo5.js` (names change every release) |
+| Reasonix Studio | **2.52.0** — the build this tool was developed and tested against |
+| Upstream release | `studio-v2.52.0` (2026-10-26) |
+| Interface bundles | `i18n-DunoFOkp.js`, `Settings-Bj8eAezi.js` (names change every release) |
 
 **Check your version before applying.** Open the application's *About* panel, or
 read the `version` field of `resources/app.asar` in the install folder. (The
 upstream source declares `0.0.0` and injects the real version at build time, so
 the built artifact is the only place the number lives.)
 
-- **`2.50.0` is the build the patch anchors were verified against.** Reasonix
+- **`2.52.0` is the build the patch anchors were verified against.** Reasonix
   Studio ships frequently; a newer release may move the anchors. At the time of
-  writing, `2.50.0` was the current upstream release.
+  writing, `2.52.0` was the current upstream release.
 - On a **different version**, extraction usually still works (it reads the string
   catalogs, not the compiled bundle), but **injection may fail**: the anchor
   patterns may have moved, and the injector will report which patterns it could
@@ -244,7 +244,7 @@ the built artifact is the only place the number lives.)
 - The scripts **do not** silently mis-apply: every patch is asserted to match
   exactly once, and a failed match is reported and skipped.
 - When a newer Reasonix version breaks the anchors, the fix is to update the
-  patterns in `scripts/patch250.py` (the 2.46.0 and 2.47.0 scripts are kept in
+  patterns in `scripts/patch252.py` (the 2.46.0 to 2.50.0 scripts are kept in
   `scripts/` for anyone still on those builds). Contributions for newer versions
   are welcome.
 
@@ -261,10 +261,15 @@ Honest list, so nobody is surprised:
   notifications) ships its strings **compiled into a binary** and is out of
   scope. Only the English portion of a few native surfaces is affected. See
   `docs/LIMITATIONS.md`.
-- **Tied to Reasonix Studio 2.50.0** for injection (see above).
-- **2.50.0 support covers the web interface only.** The native `app.asar` step
-  (`scripts/patch_asar247.py`) has not been ported to 2.49 yet: 2.49 users get
-  the fully translated interface, but not the native surfaces.
+- **Tied to Reasonix Studio 2.52.0** for injection (see above).
+- **2.52.0 support covers the web interface in this launcher.** The native
+  `app.asar` step (`scripts/patch_asar247.py`, 2.49 anchors) still applies
+  unchanged on 2.52 (11/11 replacements, 4/4 markers, checked), but
+  `Francisation_2.52.bat` does not run it; the zip ships it separately.
+- **The fallback language is configurable** with `--default-lang` or
+  `REASONIX_UI_DEFAULT` (`fr`, `en` or `auto`, `fr` by default): when no language
+  is saved, the interface opens in that language instead of falling back to
+  English.
 - **French is the only complete translation** shipped. Other languages are
   community contributions.
 - **Partial translations are expected and safe.** A missing key falls back to

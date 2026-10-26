@@ -9,6 +9,56 @@ La version anglaise de ce fichier est [`CHANGELOG.md`](CHANGELOG.md).
 
 ---
 
+## [2.52.0] — 2026-10-26
+
+Prise en charge de **Reasonix Studio 2.52.0**. Cette version corrige un défaut
+qui rendait le choix de langue impossible à conserver : sélectionner le français
+rechargeait la fenêtre en anglais.
+
+### Ajouté
+
+- **`Francisation_2.52.bat`**, le lanceur de cette version.
+- **`scripts/patch252.py`** : cinq ancres pour le build 2.52 (les six ancres de
+  la 2.49 n'existent plus), plus le dictionnaire, le sélecteur de langue, l'écran
+  de démarrage et les libellés anglais codés en dur.
+- **`--default-lang fr|en|auto`** (ou `REASONIX_UI_DEFAULT`) : la langue sur
+  laquelle l'interface retombe quand rien n'est enregistré. La chaîne reste
+  générique — le français est un préréglage, pas une règle.
+- **`Reasonix-FR-2.52.zip`** : paquet complet, construit **sans** `backups/`,
+  contrairement à l'archive 2.50 qui embarquait des copies de code Reasonix
+  (`app.asar`, bundles minifiés).
+- **174 chaînes** traduites, et **9 entrées** restées en anglais corrigées
+  (`Jetons`, `Compacter`, `Clé API`, `Tours`, `Message à envoyer`, `Rang {n}`…).
+
+### Modifié
+
+- **La logique de langue a été réécrite en amont.** La 2.52 stocke
+  `b = { zh: {}, en: {…} }`, résout `S = b[x]`, et traduit via
+  `A(e,t) = S[e] ?? e`. Les six ancres de la 2.49 ont disparu ; le patch en
+  réécrit cinq.
+- **Le dictionnaire couvre désormais 100 % du build** : 5 146 chaînes sur 5 146.
+
+### Corrigé
+
+- **Le choix de langue ne retombe plus en anglais.** Cause racine, établie en
+  lisant le shell : `preload.js` restaure les préférences de la page depuis
+  `window-prefs.json`, et `rx-lang` revient **vide** ; l'origine de la page change
+  à chaque lancement (le noyau écoute sur un port local neuf), donc `localStorage`
+  démarre vide ; sans valeur, le bundle retombait sur la langue de la machine —
+  l'anglais sur une machine non francophone. Le `uilang.js` natif ne connaît que
+  `zh` et `en`, il ne pouvait donc pas rétablir le français non plus. Avec cette
+  version, une valeur vide résout vers le défaut configuré (`fr`).
+
+### Problèmes connus
+
+- Un choix explicite dépend encore de `rx-lang` enregistré ; si la valeur
+  restaurée est vide après un redémarrage, c'est le défaut qui s'applique.
+- L'étape native `app.asar` utilise toujours les ancres de la 2.49. Elles ont été
+  recontrôlées sur la 2.52 (11/11 remplacements, 4/4 marqueurs) et s'appliquent
+  sans modification, mais le lanceur de cette version ne l'exécute pas.
+
+---
+
 ## [2.50.0] — 2026-10-24
 
 Prise en charge de **Reasonix Studio 2.50.0**. Cette version a exigé de réécrire

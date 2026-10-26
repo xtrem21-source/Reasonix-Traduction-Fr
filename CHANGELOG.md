@@ -9,6 +9,55 @@ The French version of this file is [`CHANGELOG.fr.md`](CHANGELOG.fr.md).
 
 ---
 
+## [2.52.0] — 2026-10-26
+
+Support for **Reasonix Studio 2.52.0**. This release fixes a defect that made the
+language choice impossible to keep: selecting French reloaded the window into
+English.
+
+### Added
+
+- **`Francisation_2.52.bat`**, the launcher for this release.
+- **`scripts/patch252.py`**: five anchors for the 2.52 build (the six 2.49
+  anchors no longer exist), plus the dictionary, the language selector, the boot
+  screen and the hard-coded English labels.
+- **`--default-lang fr|en|auto`** (or `REASONIX_UI_DEFAULT`): the language the
+  interface falls back to when nothing is saved. The pipeline stays generic —
+  French is a preset, not a rule.
+- **`Reasonix-FR-2.52.zip`**: complete package, built **without** `backups/`,
+  unlike the 2.50 archive, which shipped copies of Reasonix code (`app.asar`,
+  minified bundles).
+- **174 new strings** translated, and **9 entries** that had stayed in English
+  (`Jetons`, `Compacter`, `Clé API`, `Tours`, `Message à envoyer`, `Rang {n}`…).
+
+### Changed
+
+- **The language logic was rewritten upstream.** 2.52 stores
+  `b = { zh: {}, en: {…} }`, resolves `S = b[x]`, and translates through
+  `A(e,t) = S[e] ?? e`. All six 2.49 anchors are gone; the patch rewrites five.
+- **The dictionary now covers 100 % of the build**: 5 146 of 5 146 strings.
+
+### Fixed
+
+- **The language choice no longer resets to English.** Root cause, established
+  by reading the shell: `preload.js` restores the page's preferences from
+  `window-prefs.json`, and `rx-lang` comes back **empty**; the page origin
+  changes at every launch (the kernel listens on a new loopback port), so
+  `localStorage` starts empty; with nothing saved, the bundle fell back to the
+  machine language — English on a non-French machine. The native `uilang.js`
+  only knows `zh` and `en`, so it could not restore French either. With this
+  release, an empty value resolves to the configured default (`fr`).
+
+### Known issues
+
+- An explicit choice still depends on `rx-lang` being saved; if the saved value
+  is empty after a restart, the default applies.
+- The native `app.asar` step still uses the 2.49 anchors. They were re-checked
+  against 2.52 (11/11 replacements, 4/4 markers) and apply unchanged, but the
+  launcher of this release does not run that step.
+
+---
+
 ## [2.50.0] — 2026-10-24
 
 Support for **Reasonix Studio 2.50.0**. This release required rewriting every
