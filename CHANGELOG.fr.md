@@ -9,6 +9,47 @@ La version anglaise de ce fichier est [`CHANGELOG.md`](CHANGELOG.md).
 
 ---
 
+## [2.52.1] — 2026-10-27
+
+La francisation s'accompagne désormais d'un **micro réellement utilisable**. Cette version
+ajoute un **second fournisseur de clé API** : deux clés indépendantes, donc deux chances —
+si l'une tombe (panne, quota, clé révoquée), l'autre prend le relais sans réinstallation.
+
+### Ajouté
+
+- **Groq** comme second fournisseur de transcription (`whisper-large-v3-turbo`), à côté de
+  Gemini. Les deux clés sont stockées **séparément** (`rx-ocVoice.geminiKey`,
+  `rx-ocVoice.groqKey`) : changer de fournisseur n'efface jamais l'autre. Un sélecteur dans
+  le panneau, **un seul champ de clé visible à la fois**, et un bouton « Tester la clé API »
+  qui teste celle du fournisseur actif.
+- **Dictée Windows (`Win+H`)** depuis le bouton micro : aucune clé, aucune dépendance à un
+  service en ligne — la reconnaissance du système. Session de 10 à 15 secondes, une phrase
+  par clic.
+- **Menu contextuel en français** (clic droit) : `micro-winh/APPLIQUER-MENU-FR.bat`.
+  L'application ne connaît que deux langues, `zh` et `en` ; les libellés anglais sont
+  remplacés par leur équivalent français.
+- **`micro-winh/`** : le module, `winh.ps1`, `dicter.bat`, les patcheurs `app.asar` et leurs
+  lanceurs — tout ce qui est nécessaire pour réappliquer le micro après une mise à jour.
+
+### Modifié
+
+- Le bouton micro mesure **24 px** et reste **visible pendant qu'un tour s'exécute**, sans
+  chevauchement avec le bouton d'arrêt.
+- La clé d'un fournisseur n'est **jamais effacée** : changer de fournisseur change de champ.
+
+### Corrigé
+
+- `spawn(..., { detached: true })` empêchait PowerShell d'exécuter le script — sortie 0,
+  aucun effet, aucune erreur. Remplacé par `detached: false`.
+- `spawn("powershell")` sans chemin absolu échouait **silencieusement** : le chemin absolu
+  est utilisé, et l'échec est journalisé.
+- `LWin` est une touche **étendue** : sans `KEYEVENTF_EXTENDEDKEY` ni le code de balayage
+  `0x5B`, Windows recevait un `h` littéral. La combinaison correcte est appliquée, un
+  événement par appel.
+- Deux `Win+H` rapprochés **refermaient** la dictée : un seul envoi toutes les 3 secondes.
+
+---
+
 ## [2.52.0] — 2026-10-26
 
 Prise en charge de **Reasonix Studio 2.52.0**. Cette version corrige un défaut

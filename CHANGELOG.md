@@ -9,6 +9,45 @@ The French version of this file is [`CHANGELOG.fr.md`](CHANGELOG.fr.md).
 
 ---
 
+## [2.52.1] — 2026-10-27
+
+The French translation now ships with a **genuinely usable microphone**. This release adds a
+**second API key provider**: two independent keys, so two chances — if one fails (outage,
+quota, revoked key), the other takes over without reinstalling anything.
+
+### Added
+
+- **Groq** as a second transcription provider (`whisper-large-v3-turbo`), next to Gemini.
+  Both keys are stored **separately** (`rx-ocVoice.geminiKey`, `rx-ocVoice.groqKey`):
+  switching provider never erases the other one. A selector in the panel, **one key field
+  visible at a time**, and a "Test API key" button that tests the active provider's key.
+- **Windows dictation (`Win+H`)** from the microphone button: no key, no dependency on an
+  online service — the system's own recognition. 10 to 15 second sessions, one sentence per
+  click.
+- **French context menu** (right click): `micro-winh/APPLIQUER-MENU-FR.bat`. The application
+  only knows two languages, `zh` and `en`; the English labels are replaced by their French
+  counterparts.
+- **`micro-winh/`**: the module, `winh.ps1`, `dicter.bat`, the `app.asar` patchers and their
+  launchers — everything needed to reapply the microphone after an update.
+
+### Changed
+
+- The microphone button is **24 px** and stays **visible while a turn is running**, without
+  overlapping the stop button.
+- A provider's key is **never erased**: switching provider switches the field.
+
+### Fixed
+
+- `spawn(..., { detached: true })` prevented PowerShell from running the script — exit 0,
+  no effect, no error. Replaced with `detached: false`.
+- `spawn("powershell")` without an absolute path failed **silently**: the absolute path is
+  now used, and failures are logged.
+- `LWin` is an **extended** key: without `KEYEVENTF_EXTENDEDKEY` and the `0x5B` scan code,
+  Windows received a literal `h`. The correct combination is applied, one event per call.
+- Two `Win+H` in quick succession **closed** dictation: only one is sent every 3 seconds.
+
+---
+
 ## [2.52.0] — 2026-10-26
 
 Support for **Reasonix Studio 2.52.0**. This release fixes a defect that made the
