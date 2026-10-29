@@ -1,0 +1,34 @@
+{
+ "_note": "Reglages du patcheur de libelles (tools/patch_literals.py). Les traductions viennent de dict/fr.json ; ce fichier ne dit que ce qu'il faut eviter.",
+ "_pourquoi": "Une partie du texte de l'interface n'est pas passee par la fonction de traduction : elle est ecrite en dur dans les bundles, sous forme de propriete JSX (children, title, label...) ou de champ d'objet (filtres, libelles, messages). Le dictionnaire ne peut rien pour elle ; il faut reecrire la source. La regle est donc large : toute propriete dont la valeur est un litteral chinois est traduite. Les valeurs qui ne sont pas des textes (identifiants, classes CSS, codes) sont deja en ASCII et ne sont jamais touchees.",
+
+ "skip_props": [
+  "keywords",
+  "className",
+  "id",
+  "section",
+  "anchor",
+  "scope",
+  "apply",
+  "role",
+  "type",
+  "data-action",
+  "data-target",
+  "data-scope",
+  "aria-hidden"
+ ],
+
+ "keep": [
+  "做游戏的小鱼"
+ ],
+
+ "_keep": "Noms propres qui doivent rester tels quels : un pseudo de chaine Douyin ne se traduit pas. Ils ne sont pas signales comme oublis.",
+
+ "_garde_fous": [
+  "une valeur contenant un antislash (echappement dans la source) est signalee, jamais devinee",
+  "une valeur absente de dict/fr.json est signalee dans logs/libelles-sans-traduction.txt et laissee telle quelle",
+  "les comparaisons (=== `中文`), les tableaux (keywords:[`中文`]) et les affectations (var x=`中文`) ne sont pas de la forme propriete:litteral : elles ne sont jamais touchees"
+ ],
+
+ "overrides": {}
+}

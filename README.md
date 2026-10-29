@@ -3,6 +3,11 @@
 <p align="center"><img src="assets/logo.png" width="128" alt="Reasonix Traduction FR"></p>
 
 
+> **Reasonix Studio 2.55 and later — a new approach lives in [`pack-2.55/`](pack-2.55/).**
+> One double-click applies the French interface, a three-provider microphone and an
+> encrypted API-key vault. What is below describes the generic toolchain, kept unchanged.
+> Read [NEW-APPROACH.md](NEW-APPROACH.md) to choose between the two.
+
 **Translate the Reasonix Studio interface into your language.**
 
 Reasonix-Traduction-Fr is a small, readable toolchain that lets you translate the

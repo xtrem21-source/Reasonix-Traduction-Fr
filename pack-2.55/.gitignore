@@ -1,0 +1,47 @@
+# ---------------------------------------------------------------------------
+# Reasonix-Traduction-Vault — fichiers qui ne doivent jamais être publiés
+# ---------------------------------------------------------------------------
+
+# Journaux et sauvegardes locaux
+logs/
+backups/
+old/
+
+# État local du dernier passage (régénéré à chaque exécution)
+dict/etat.json
+dict/catalog.json
+dict/ids.json
+a-traduire.tsv
+a-traduire.txt
+a-relire.md
+A-DIRE-A-REASONIX.md
+
+# Dépendances embarquées (installées à la demande : npm i @electron/asar)
+tools/node_modules/
+node_modules/
+
+# Sauvegardes posées par les patcheurs, à côté des fichiers d'origine
+*.avant-fr
+*.avant-*
+*.bak
+*.bak-*
+
+# Configuration propre à cette machine
+config.local.bat
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# OS et éditeurs
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp

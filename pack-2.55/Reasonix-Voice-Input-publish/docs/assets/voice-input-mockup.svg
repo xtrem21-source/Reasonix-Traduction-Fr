@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Voice input in an Electron chat composer</title>
+  <desc id="desc">Mockup: a mic button next to the send arrow, a hidden right-click settings menu, and labels for auto-send, attachments and queue.</desc>
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      .panel { fill: #161b22; stroke: #30363d; stroke-width: 1.5; }
+      .chip { fill: #21262d; stroke: #30363d; }
+      .line { stroke: #30363d; stroke-width: 1.5; }
+      .text { fill: #e6edf3; font-family: "Segoe UI", Arial, sans-serif; }
+      .muted { fill: #8b949e; font-family: "Segoe UI", Arial, sans-serif; }
+      .accent { fill: #2f81f7; }
+      .green { fill: #3fb950; }
+      .orange { fill: #d29922; }
+      .mic { fill: #2f81f7; }
+      .send { fill: #238636; }
+      .small { font-size: 13px; }
+      .body { font-size: 15px; }
+      .label { font-size: 12px; letter-spacing: 0.3px; }
+      .title { font-size: 20px; font-weight: 600; }
+      .menu-title { font-size: 14px; font-weight: 600; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="960" height="560" rx="18"/>
+  <text x="36" y="46" class="text title">Reasonix Studio — voice input</text>
+  <text x="36" y="70" class="muted small">Mockup · no personal data</text>
+
+  <!-- chat area -->
+  <rect x="36" y="92" width="888" height="300" rx="14" class="panel"/>
+  <rect x="58" y="118" width="250" height="46" rx="10" class="chip"/>
+  <text x="76" y="146" class="muted body">Message dicté, relu, prêt à envoyer.</text>
+  <rect x="58" y="180" width="360" height="46" rx="10" class="chip"/>
+  <text x="76" y="208" class="muted body">Deuxième message en file d'attente.</text>
+  <rect x="58" y="242" width="300" height="46" rx="10" class="chip"/>
+  <text x="76" y="270" class="muted body">Réponse de l'agent…</text>
+
+  <!-- composer -->
+  <rect x="36" y="414" width="888" height="104" rx="16" class="panel"/>
+  <rect x="58" y="436" width="180" height="28" rx="8" class="chip"/>
+  <text x="72" y="455" class="muted label">📎 document.pdf</text>
+  <text x="58" y="490" class="text body">Je dicte mon message…</text>
+
+  <!-- send arrow -->
+  <circle cx="790" cy="466" r="22" class="send"/>
+  <path d="M783 466 h14 m-5 -5 l5 5 -5 5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- mic -->
+  <circle cx="850" cy="466" r="22" class="mic"/>
+  <rect x="845" y="454" width="10" height="15" rx="5" fill="#ffffff"/>
+  <path d="M840 466 a10 10 0 0 0 20 0 M850 478 v6 M845 484 h10" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- hidden menu -->
+  <rect x="560" y="180" width="330" height="212" rx="14" class="panel"/>
+  <text x="580" y="208" class="text menu-title">Réglages du micro</text>
+  <text x="580" y="232" class="muted label">Clic droit — menu caché</text>
+  <line x1="580" y1="244" x2="870" y2="244" class="line"/>
+  <text x="580" y="268" class="muted label">Clé Gemini</text>
+  <rect x="690" y="254" width="180" height="22" rx="6" class="chip"/>
+  <text x="700" y="270" class="muted small">••••••••••••</text>
+  <text x="580" y="300" class="muted label">Modèle</text>
+  <rect x="690" y="286" width="180" height="22" rx="6" class="chip"/>
+  <text x="700" y="302" class="muted small">gemini-3.5-flash-lite</text>
+  <text x="580" y="332" class="muted label">Langue</text>
+  <rect x="690" y="318" width="180" height="22" rx="6" class="chip"/>
+  <text x="700" y="334" class="muted small">Français</text>
+  <text x="580" y="364" class="muted label">Insertion auto</text>
+  <circle cx="800" cy="359" r="10" class="green"/>
+  <text x="828" y="364" class="muted small">Envoi auto</text>
+  <circle cx="800" cy="383" r="10" class="orange"/>
+  <text x="828" y="388" class="muted small">Mot-clé d'envoi</text>
+
+  <!-- callouts -->
+  <line x1="850" y1="488" x2="850" y2="520" class="line"/>
+  <text x="700" y="540" class="muted label">Clic gauche : dicter · Clic droit : réglages</text>
+  <text x="58" y="540" class="muted label">Envoi auto / manuel · pièces jointes · file d'attente</text>
+</svg>

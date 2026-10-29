@@ -3,6 +3,11 @@
 <p align="center"><img src="assets/logo.png" width="128" alt="Reasonix Traduction FR"></p>
 
 
+> **Reasonix Studio 2.55 et après — une nouvelle approche vit dans [`pack-2.55/`](pack-2.55/).**
+> Un double-clic applique l'interface française, un micro à trois fournisseurs et un coffre
+> à clés chiffré. Ce qui suit décrit la chaîne générique, laissée intacte.
+> Lisez [NOUVELLE-APPROCHE.md](NOUVELLE-APPROCHE.md) pour choisir entre les deux.
+
 **Traduisez l'interface de Reasonix Studio dans votre langue.**
 
 Reasonix-Traduction-Fr est une petite chaîne d'outils lisible qui permet de traduire
