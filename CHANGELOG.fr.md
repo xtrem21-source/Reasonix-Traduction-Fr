@@ -9,6 +9,31 @@ La version anglaise de ce fichier est [`CHANGELOG.md`](CHANGELOG.md).
 
 ---
 
+## [2.61.0] — 2026-11-18
+
+Mise à jour de la francisation sur **Reasonix Studio 2.61**, avec trois correctifs
+demandés par l'usage quotidien : les pièces jointes collées, la clé du micro, et le
+pont OpenCode.
+
+### Ajouté
+
+- **Correctif du collage des pièces jointes** (`tools/patch-collage.mjs`) : une capture
+  d'écran collée dans la zone de saisie n'est plus refusée. Le serveur exigeait une
+  extension de fichier ; une capture arrive avec un nom incomplet. Le correctif fabrique
+  l'extension à partir du type MIME. Le glisser-déposer n'est pas concerné : il référence
+  un chemin, et fonctionnait déjà.
+- **Pont OpenCode** (`opencode-bridge/`) : expose le quota gratuit d'OpenCode comme
+  fournisseur OpenAI-compatible local, sur le port 31416.
+
+### Modifié
+
+- **Le micro lit désormais `data/home/.env` en priorité**, et ne se rabat sur le coffre
+  chiffré `mic-keys.bin` que si la variable est absente. Conséquence : la clé peut être
+  saisie dans l'interface des fournisseurs, comme toutes les autres, sans perdre les clés
+  déjà enregistrées dans le coffre.
+
+---
+
 ## [2.52.1] — 2026-10-27
 
 La francisation s'accompagne désormais d'un **micro réellement utilisable**. Cette version

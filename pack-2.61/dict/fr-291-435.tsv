@@ -1,0 +1,145 @@
+291	Replier {name}
+292	Afficher la progression de chaque étape en segments sur la barre de plan repliée. Activé par défaut ; enregistré seulement sur cet ordinateur.
+293	Replier les contenus plus anciens
+294	Modifier…
+295	Transformer en intervention
+296	{n} fichiers modifiés
+297	Modifications, historique des commits et fichiers
+298	Les modifications et l'historique nécessitent git
+299	Réglages modifiés
+300	Envoyé en arrière-plan
+301	Agrandir le texte
+302	Données
+303	Tout l'espace de travail
+304	Fichiers et aperçus
+305	Le fichier a changé entre-temps ; sélectionnez à nouveau l'élément puis réessayez
+306	Trop volumineux pour l'aperçu
+307	Le fichier n'est plus là
+308	Plusieurs éléments du fichier correspondent ; impossible de savoir lequel modifier
+309	Le texte du fichier diffère de celui affiché ; rien n'a été modifié
+310	Texte
+311	Contraste entre le texte et le fond
+312	Couleur du texte
+313	Quel mode au démarrage d'une nouvelle conversation
+314	Nouveau fichier · ouvrir pour tout voir
+315	Nouvel onglet
+316	Version {v} disponible
+317	La version {v} est téléchargée.
+318	Nouveau
+319	Impossible de lire les réglages de vérification. Vérifiez la connexion ou les permissions, puis réessayez.
+320	Afficher dans la barre latérale les sessions migrées depuis les versions 1.x
+321	Versions antérieures ({n})
+322	Clair ou sombre, couleurs, polices, fond d'écran
+323	Galaxie
+324	Ne pas corriger
+325	Débit limité
+326	Plus d'actions pour {name}
+327	Plus : tout copier, taille du texte
+328	Plus d'actions pour {name} : modifier, tester la connexion, masquer de la barre, retirer
+329	Plus d'outils
+330	Plus d'options…
+331	Plus ancien
+332	{n} étapes plus anciennes
+333	{n} messages plus anciens — cliquez pour charger
+334	{n} diffèrent des valeurs par défaut
+335	Une partie de l'historique n'a pas pu être indexée ; les résultats peuvent être incomplets
+336	Un peu flou ; le réutiliser le précisera
+337	Nouvelles réponses
+338	Certains sites refusent l'intégration ; utilisez le bouton en haut à droite pour les ouvrir dans votre navigateur.
+339	Services
+340	Total rapporté par le fournisseur
+341	Paiement requis ; vérifiez votre compte
+342	L'adresse est déjà remplie pour {name} ({host}) ; saisissez-la vous-même seulement pour un relais ou un service auto-hébergé.
+343	Non enregistré
+344	Sans galaxie
+345	Le réglage de mémoire n'a pas pu être enregistré : {detail}
+346	Ce souvenir n'a pas pu être enregistré : {detail}
+347	Non suivi
+348	Fichier non suivi · ouvrir pour voir son contenu
+349	Clé API non configurée
+350	Sous-agents de cette session
+351	Cette session devrait réorganiser son contexte automatiquement vers {n} tokens.
+352	Sur cette page
+353	Ces réglages s'appliquent sur cet ordinateur, immédiatement ; les exceptions sont signalées à côté du nom
+354	Permissions et sécurité
+355	Relâchez pour choisir ce dossier
+356	Portée de la recherche
+357	Voir
+358	Voir la note d'archivage
+359	Afficher le contenu replié
+360	Onglets et navigation
+361	Racine du projet
+362	Format
+363	Points de contrôle (instantanés de retour)
+364	Vérification
+365	Le modèle note de lui-même
+366	Quand le modèle ajoute un sous-dossier de ce projet comme projet via open_projects, il est ajouté et déclaré de confiance sans carte ; les dossiers hors projet posent toujours la question. La configuration d'un dossier de confiance peut lancer des programmes : n'activez ceci que pour un dépôt auquel vous faites confiance.
+367	Bienvenue dans Reasonix
+368	En cours : {what}
+369	Étape : {step}
+370	Archivage de {n} messages
+371	Archivage des contenus plus anciens
+372	Vérification de la connexion et du solde…
+373	Gestion des extensions de {name}, pas du projet de cette session.
+374	Vérification de la clé et lecture des modèles…
+375	Chaque conversation peut changer de modèle depuis la zone de saisie ; ici, seul le défaut est fixé.
+376	Annoncer en une phrase ce que fait chaque étape
+377	À chaque fois
+378	Inclus à chaque tour
+379	Verre dépoli, halos et autres effets visuels
+380	Aucune session, aucun réglage ni aucune action ne correspond
+381	L'aperçu des documents Office est désactivé
+382	Aucune modification
+383	Aucun souvenir ne correspond.
+384	Rien n'attend votre confirmation.
+385	Pas de bac à sable système : les commandes demandent d'abord
+386	Impossible d'ouvrir le terminal : {why}
+387	C'est exact
+388	Résultat antérieur réutilisé
+389	Parcourir les extensions partagées
+390	Onglet du navigateur · {name}
+391	Ajouter…
+392	Ajouter des images
+393	Ajouter un projet
+394	Effacer l'écran
+395	Net
+396	Net, et ne s'estompe jamais
+397	Net encore environ {n} jours
+398	Effacer le filtre
+399	Molette pour zoomer · glisser pour déplacer · Échap pour fermer
+400	Ouvrir une catégorie pour ses principaux éléments
+401	Sélectionnez une ligne pour l'ouvrir dans l'atelier
+402	Cliquez pour y aller · clic droit pour marquer d'une étoile
+403	Sélectionner un élément de la page
+404	Demander avant un appel qui recopie du texte d'une page web ou d'un résultat d'outil
+405	Version et diagnostic
+406	Rien ne tourne en ce moment
+407	Utilisé actuellement
+408	Les fichiers générés apparaissent en cartes cliquables
+409	S'applique
+410	Réécrit avec le modèle actuel ; votre texte reste tant que vous n'adoptez pas
+411	Atteindre les sessions de cet ordinateur depuis un téléphone, avec les réglages de notification
+412	Utilisé
+413	Usages et contexte
+414	Langue de l'interface
+415	Sauvegarder la configuration dans le cloud une fois connecté
+416	Enregistré comme {issue}
+417	Noter directement
+418	Utilisé quand c'est pertinent
+419	Que faire quand quelque chose mérite d'être gardé
+420	Voir la sortie complète
+421	Voir la sortie
+422	Confirmer l'arrêt de la tâche en arrière-plan : {cmd}
+423	La communauté, les contributeurs et les sponsors sont présentés ici ; ce ne sont pas des interrupteurs.
+424	Pour les publications communautaires et le suivi des plantages ; sans rapport avec les clés des modèles
+425	Hors ligne
+426	Lignes {a}–{b}
+427	Étape {n} sur {total}
+428	Étape {n}
+429	Ligne {n}
+430	Messages {a} à {b}
+431	En attente de votre réponse
+432	À traiter
+433	À vous de décider
+434	En attente de votre confirmation
+435	En attente d'une place d'écriture

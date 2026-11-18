@@ -1,0 +1,143 @@
+436	En attente d'une place libre
+437	En attente du service amont
+438	En attente
+439	Trop d'attente : la sélection a été annulée
+440	En attente d'un chemin d'écriture occupé
+441	简体中文
+442	Affichage simplifié
+443	Gérer MCP
+444	Gérer les extensions de quel projet
+445	La personnalité système et les préréglages de l'agent
+446	Contraintes
+447	Détails
+448	Terminal {n}
+449	Le terminal n'a pas pu démarrer
+450	Programme du terminal
+451	Sortie du terminal
+452	Le programme du terminal est terminé ; redémarrez-le avant de saisir
+453	Terminer et fermer
+454	Les tâches terminées restent jusqu'à la fermeture de la session, ou jusqu'à « Effacer »
+455	Écrire des tests pour les modifications
+456	Continuer à planifier
+457	{rate} % de cache · facturé au tarif du cache
+458	Modifier la personnalité
+459	Réduire le texte
+460	Clé manquante
+461	Réseau, machines distantes, téléphone
+462	Après combien de temps d'inactivité une page en arrière-plan se met en veille
+463	Meituan
+464	Réseau
+465	Couleur de fond
+466	Vérifier automatiquement les connexions et les soldes
+467	Une extension que vous avez écrite
+468	Saisir l'adresse soi-même
+469	Portée
+470	En attente, pas encore commencé
+471	Faut-il vérifier et télécharger les nouvelles versions en arrière-plan ; le redémarrage reste votre décision
+472	Pour un navigateur ou un terminal, utilisez + dans la barre d'onglets ci-dessus.
+473	Faut-il le retenir ?
+474	Ce qu'il faut retenir
+475	Expliquer la structure de ce projet
+476	Plan · étape {n} sur {total}
+477	Plans et questions
+478	Faut-il vous montrer le plan avant de l'exécuter
+479	Comment les plans sont approuvés, combien de temps attend une question, ce qui compte comme terminé
+480	Forfait d'abonnement (estimation)
+481	Permettre à une session d'envoyer un message à une autre (expérimental)
+482	Le laisser ouvrir des pages, cliquer et faire des captures dans le navigateur intégré
+483	Retenir
+484	Mémoire, usage, stockage, sauvegarde
+485	Mémoire et usage
+486	Catégories de mémoire
+487	essayez de désactiver « Respecter la casse »
+488	essayez de désactiver les expressions régulières
+489	essayez de passer la portée à « Tout »
+490	Requêtes temporairement limitées ; réessayez plus tard
+491	Impossible de lire la liste des processus : {detail}
+492	Ajuster la largeur de l'arborescence
+493	Compte, version, journaux, communauté
+494	Compte et à propos
+495	Devise d'affichage des coûts
+496	Explorateur : modifications, historique des commits et fichiers
+497	Quel programme exécute les commandes
+498	Terminé, code de sortie {code}
+499	Trop peu de contenu ajouté depuis le dernier repli pour en valoir un autre
+500	Suivre la sortie la plus récente
+501	Suivre le système, clair ou sombre
+502	Revenir à la carte ↑
+503	Redirection refusée
+504	{n} messages plus anciens archivés
+505	Les contenus plus anciens sont archivés dans un fichier que le modèle relit au besoin ; l'historique complet est conservé et peut être déplié à tout moment.
+506	Les contenus plus anciens sont archivés dans un fichier que le modèle relit au besoin ; l'historique complet de la conversation sera conservé.
+507	Contenus plus anciens archivés
+508	Entrée · cache
+509	Entrée · hors cache
+510	Entrées, sorties et coûts, par jour et par modèle
+511	Saisie et rappels
+512	Le texte d'aide dans la zone de saisie
+513	Afficher « n fichiers modifiés » en haut de la zone de saisie
+514	sortie ÷ entrée
+515	Ratio de sortie
+516	Déroulé
+517	Vous pouvez continuer à écrire pendant l'exécution…
+518	Traitement par défaut d'un message envoyé pendant l'exécution
+519	Revenir à l'espace de travail
+520	Pas encore de clé ? Obtenez-en une chez {name}
+521	Aucun service de modèle connecté ; rien ne peut être envoyé
+522	Pas encore rappelé
+523	Ce message a été mis en file par Reasonix 1.x avec des images que cette version ne sait pas lire ; il est retenu plutôt qu'envoyé sans elles
+524	Ce tour a échoué ; ce qu'il avait déjà pensé est dépliable
+525	Cette version de Windows ne prend pas en charge le terminal intégré (Windows 10 1809 ou plus récent requis)
+526	Cette valeur ne peut pas être écrite dans un style
+527	Cet élément en contient d'autres : seules les couleurs et la taille peuvent changer, pas le texte
+528	Ce fichier est hors de l'espace de travail actuel ; impossible de l'enregistrer
+529	La structure de ce fichier ne correspond pas de façon fiable à la page ; rien n'a été modifié
+530	Ce terminal n'existe plus
+531	Une commande tourne encore dans ce terminal ; le fermer l'interrompt.
+532	Ce programme de terminal n'existe pas sur cette machine
+533	C'est votre propre terminal : il s'exécute sous votre identité, hors des permissions et du bac à sable du modèle. Le modèle n'y voit rien, sauf si vous lui envoyez le contenu.
+534	Quels fichiers cette session a modifiés
+535	Cette mise en page n'a pas pu s'afficher ; le contenu est intact
+536	Processus
+537	Le processus s'est arrêté (code {code})
+538	Connecter un service de modèle
+539	Connectez un service de modèle, choisissez un modèle par défaut, puis commencez à dialoguer dans un projet.
+540	Se connecter à Reasonix sur d'autres machines
+541	Connexion en échec
+542	Connexion en échec ; vérifiez le réseau ou le fournisseur
+543	Connexion non confirmée
+544	Mode de connexion
+545	La vérification de connexion a expiré ; réessayez plus tard
+546	Connecter un modèle
+547	Connecté
+548	Connexion établie ; appels au modèle non vérifiés
+549	État de la connexion non confirmé
+550	Délai de connexion dépassé
+551	Redirection refusée ; vérifiez l'adresse
+552	Échec de l'authentification ; vérifiez la clé ou les permissions
+553	Mettre en pause et vous prévenir quand plusieurs tours n'apportent rien
+554	Sortie {code}
+555	Objectif de sortie
+556	Choisir un modèle par défaut
+557	Choisissez-en un, saisissez la clé et c'est prêt. Vous pourrez en ajouter d'autres ensuite.
+558	Choisir les entrées et leur ordre dans la barre d'icônes et la carte d'outils latérale
+559	Choisir un dossier…
+560	Choisir un programme de terminal
+561	Choisir le modèle par défaut
+562	Aucun de ceux-là
+563	Quota épuisé
+564	Redémarrez pour l'utiliser ; Studio ne redémarre jamais tout seul.
+565	Redémarrer
+566	Importance
+567	Hooks
+568	Échec de l'authentification
+569	Joindre une image
+570	Paiement requis
+571	Connexion au compte requise
+572	Numéro de page
+573	La page n'est plus visible ; la sélection a été annulée
+574	La page a navigué ou s'est rechargée ; la sélection a été annulée
+575	Cet élément est introuvable sur la page
+576	Budget épuisé
+577	Élevé
+578	Désactivé par défaut. Une fois activé, l'ouverture de la liste des modèles utilise les clés enregistrées pour vérifier les connexions globales autorisées et les soldes, sans requête de génération.

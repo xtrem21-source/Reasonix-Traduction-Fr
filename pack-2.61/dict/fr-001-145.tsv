@@ -1,0 +1,145 @@
+1	 · de la conversation {d}
+2	, {n} en pause
+3	Démarré {at}
+4	{h} h
+5	{ip} · le plus rapide
+6	{kind} · {n}
+7	{live} en cours · {total} au total
+8	{m} min
+9	{machine} · déconnecté
+10	{n} sous-agents en parallèle
+11	Les {n} livrés
+12	{n} livrés
+13	{n} téléphone(s) connecté(s)
+14	Rappelé il y a {n} jours
+15	{n} en échec
+16	{n} fois
+17	{n} étapes
+18	Les {n} étapes terminées
+19	{n} tours
+20	{n} en cours
+21	{name} n'est pas enregistré
+22	{requests} requêtes · {tokens} tokens · {time}
+23	{size} ; la limite d'aperçu est {limit}
+24	{v} téléchargé ; redémarrez pour l'utiliser
+25	Le dossier « {name} » n'existe plus sur le disque. Le retirer de la liste ?
+26	↑↓ pour choisir · Entrée pour ouvrir
+27	↑↓ choisir · Entrée ouvrir · Tab changer de portée
+28	↑↓ pour choisir · Entrée pour ouvrir · Tab pour changer de portée · > actions · # sessions · , réglages
+29	> actions · # sessions · , réglages
+30	Ce que l'agent a noté de lui-même : personne ne l'a configuré, pourtant il s'en sert. Retrouvez les faits par type ou par galaxie ; ceux qu'il vient d'apprendre attendent votre confirmation sous « Nouveau ».
+31	Comportement de l'agent
+32	Ce que l'agent retient, et ce que cela coûte
+33	Envoyer avec Entrée ou avec Ctrl+Entrée
+34	github:propriétaire/dépôt ou une adresse https
+35	GLM
+36	Kimi
+37	Une notification système quand un tour se termine ou que quelque chose vous attend
+38	Retour
+39	Où le modèle relit les contenus plus anciens après compression, et l'explication
+40	Corrigé dans la prochaine version
+41	Télécharger l'image
+42	Reste sur place
+43	Ne pas enregistrer
+44	Sans la première requête de l'agent principal (démarrage à froid, {n} tokens)
+45	Sans la première requête de l'agent principal (démarrage à froid)
+46	Non merci
+47	Comment l'utiliser
+48	Il continue sans attendre ; suivez-le dans « Tâches en arrière-plan » ci-dessous · 
+49	Jamais
+50	Ouvrir les dossiers de ce projet sans demander
+51	Pas dans la session principale
+52	Pas nécessaire
+53	Ce qui se passe quand deux sessions modifient un même projet
+54	tâches en arrière-plan · toutes terminées
+55	tâches en arrière-plan en cours
+56	tâches en arrière-plan en échec
+57	tâches en arrière-plan terminées
+58	sous-agents · tous terminés
+59	sous-agents en cours
+60	Moyen
+61	Agent principal {a} · sous-agents {b}
+62	Tâche confiée par la session principale
+63	Personnalité et préréglages
+64	Quand s'arrête-t-il pour vous demander
+65	Rappelé aujourd'hui
+66	Installer depuis un dépôt
+67	Choisir un fichier à gauche
+68	Installer depuis la place de marché
+69	Importer un dossier local
+70	Diagnostic du proxy et du réseau
+71	Envoyé avec : version et système, {version} · {system}
+72	Voyage avec vous
+73	Combien d'espace prennent les sessions, index et caches
+74	Sessions
+75	Où vivent les sessions et les index, et la place qu'ils prennent
+76	Stockage des sessions
+77	Afficher l'avancement du plan à côté d'un titre de session replié
+78	Vue des sessions
+79	Combien de temps une session terminée reste dans la liste des sessions en cours
+80	Boutons affichés au survol d'une ligne de session
+81	Où sont écrites les traces de session
+82	Faible
+83	Solde insuffisant ; rechargez puis réessayez
+84	Le solde n'a pas pu être confirmé
+85	Solde inconnu (aucune interface de consultation configurée)
+86	Échec de la vérification du solde
+87	Échec de l'authentification pour la vérification du solde
+88	Portée
+89	Vous avez cliqué sur « Arrêter » ; ce qu'il avait déjà pensé est dépliable
+90	Votre message {n}
+91	Le titre, l'épinglage et l'archivage que vous avez définis
+92	Utiliser
+93	Raccourcis de la barre latérale
+94	Enregistrer dans un fichier
+95	Échec de l'enregistrement ; le fichier n'a pas été modifié
+96	Modifier l'élément choisi
+97	Terminé
+98	Terminé · 38 s · ¥0.23
+99	Arrêté sur une question restée sans réponse
+100	Arrêté à l'étape {n} : {step}
+101	Arrêter ?
+102	Arrêter le sous-agent
+103	Arrêter celui-ci
+104	Sélectionnez d'abord du texte dans la conversation ou l'atelier, il apparaîtra ici
+105	Me demander
+106	Tout arrêter
+107	Tout arrêter ?
+108	Tout ajouter
+109	sur {n} jours · {avg} requêtes par jour
+110	À propos
+111	Fermer la confirmation d'installation
+112	Disparaît à la fermeture
+113	Fermer l'onglet
+114	Autres machines
+115	Contenu
+116	Afficher {n} de plus ({total} au total)
+117	Meilleure correspondance
+118	Les plus modifiés
+119	Les quelques réglages les plus souvent modifiés, en tête à l'ouverture des réglages
+120	Les quelques réglages les plus souvent modifiés, en tête à l'ouverture des réglages · un raccourci ici ; chacun vit aussi dans sa catégorie
+121	Récemment ouverts
+122	Récemment utilisés
+123	Écrivez ce que vous voulez dire à l'autre session. Avec l'interrupteur d'envoi activé, le message parvient directement au modèle de cette session ; sinon, son utilisateur approuve d'abord.
+124	La note d'identité écrite au début de chaque session
+125	Faut-il demander avant d'écrire des fichiers ou de lancer des commandes
+126	Écrire un retour
+127	Où se trouvent les journaux à joindre en cas de problème
+128	compression automatique à {n}
+129	Charger l'agent de faire une passe en lecture seule selon un calendrier, et de laisser un rapport
+130	Cochez pour indexer ; survolez l'en-tête d'un fichier pour « Ouvrir le fichier » et « Écarter » ; cliquez sur un numéro de ligne pour ouvrir ce fichier.
+131	Collaboration
+132	L'index d'historique se construit encore ; les résultats de recherche peuvent être incomplets
+133	L'index d'historique se construit encore ({indexed}/{total}) ; les résultats de recherche peuvent être incomplets
+134	Archive de compression
+135	Original : {text}
+136	Ce que l'ancien projet autorisait ne suit pas ; le nouveau projet en décide selon ses propres règles. Ce qui reste est retiré de l'ancien projet.
+137	Activez l'aperçu dans les réglages
+138	Référence
+139	Niveau de retour {level} · {n} adoptés
+140	Vous prévenir quand un retour est adopté ou que votre niveau monte
+141	Correction livrée
+142	Publier sur la place de marché communautaire
+143	Envoyer à la conversation
+144	Quelle taille ont les requêtes envoyées aux fournisseurs de modèles
+145	Seul ce que cet ordinateur possède est listé ; le dernier choix reste celui par défaut

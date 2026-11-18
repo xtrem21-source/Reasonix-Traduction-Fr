@@ -1,0 +1,578 @@
+ · 来自 {d} 的对话	 · from the {d} conversation
+，{n} 个暂停	, {n} paused
+{at} 开始	Started {at}
+{h} 小时	{h}h
+{ip} · 最快	{ip} · fastest
+{kind} · {n} 项	{kind} · {n}
+{live} 运行中 · 共 {total}	{live} running · {total} in all
+{m} 分钟	{m} min
+{machine} · 已断开	{machine} · Disconnected
+{n} 个子代理并行	{n} subagents in parallel
+{n} 个都已交付	All {n} delivered
+{n} 交付	{n} delivered
+{n} 台手机已连接	{n} phone(s) connected
+{n} 天前被想起	Recalled {n} days ago
+{n} 失败	{n} failed
+{n} 次	{n} times
+{n} 步	{n} steps
+{n} 步全部完成	All {n} steps done
+{n} 轮对话	{n} turns
+{n} 运行中	{n} running
+{name} 还没保存	{name} is not saved
+{requests} 次请求 · {tokens} tokens · 用时 {time}	{requests} requests · {tokens} tokens · {time}
+{size}，预览上限 {limit}	{size}; the preview limit is {limit}
+{v} 已下载，待重启	{v} downloaded, restart to use
+「{name}」的文件夹已经不在磁盘上了，要把它从列表里移除吗？	The folder of “{name}” is no longer on disk. Remove it from the list?
+↑↓ 选择 · Enter 打开	↑↓ to choose · Enter to open
+↑↓ 选择 · Enter 打开 · Tab 切换范围	↑↓ move · Enter open · Tab switch scope
+↑↓ 选择 · Enter 打开 · Tab 切换范围 · > 操作 · # 会话 · , 设置	↑↓ to move · Enter to open · Tab to switch scope · > actions · # sessions · , settings
+> 操作 · # 会话 · , 设置	> actions · # sessions · , settings
+agent 自动记录的内容：未经配置，但会据此执行。可以按类型和星系查找，刚记住的在「新的」里等你确认。	What the agent wrote down on its own: nobody configured it, yet it acts on it. Find facts by type or galaxy; ones it just learned wait under New for you to confirm.
+Agent 行为	Agent behaviour
+agent 记住了什么、花了多少	What the agent remembers and what it costs
+Enter 发送还是 Ctrl+Enter 发送	Send with Enter or with Ctrl+Enter
+github:作者/仓库 或 https 地址	github:owner/repo or an https address
+GLM	GLM
+Kimi	Kimi
+一轮结束、等你处理时，系统通知提醒你	A system notification when a turn ends or something waits for you
+上一步	Back
+上下文压缩后，模型读回较早内容的位置和说明	Where the model reads earlier content back from after compaction
+下个版本修复	Fixed for the next release
+下载图片	Download image
+不会带走	Stays behind
+不保存	Don't save
+不含首个主代理请求（冷启动，{n} tokens）	Leaves out the first main-agent request (the cold start, {n} tokens)
+不含首个主代理请求（冷启动）	Leaves out the first main-agent request (the cold start)
+不用	No thanks
+不知道怎么用	How do I use it
+不等它跑完，接着做别的；进度在底部「后台任务」里 · 	It goes on without waiting; follow it under Background jobs below · 
+不记	Never
+不询问直接打开本项目内的文件夹	Open folders inside this project without asking
+不进主会话	Not in the main session
+不需要	Not needed
+两个会话同时改一个项目时怎么处理	What happens when two sessions edit one project
+个后台任务 · 都结束了	background jobs · all finished
+个后台任务在跑	background jobs running
+个后台任务失败了	background jobs failed
+个后台任务已结束	background jobs done
+个子代理 · 都结束了	subagents · all finished
+个子代理在跑	subagents running
+中	Medium
+主代理 {a} · 子代理 {b}	Main agent {a} · subagents {b}
+主会话交给它的任务	Task from the main session
+人设与预设	Persona and presets
+什么时候停下来问你	When it stops to ask you
+今天被想起	Recalled today
+从仓库地址安装	Install from a repository
+从左侧选一个文件	Pick a file on the left
+从市场安装	Install from the market
+从本机文件夹导入	Import a local folder
+代理和网络诊断	Proxy and network diagnostics
+会一起带上版本和系统：{version} · {system}	Sent along: version and system, {version} · {system}
+会带走	Travels
+会话、索引、缓存占了多少空间	How much space sessions, indexes and caches take
+会话列表	Sessions
+会话和索引放在哪里、占多少空间	Where sessions and indexes live and how much space they take
+会话存储	Session storage
+会话收起时在标题旁显示计划进度	Show plan progress beside a collapsed session title
+会话视图	Session view
+会话结束后在进行中列表里再留多久	How long a finished session stays in the running list
+会话行悬停时显示的按钮	Buttons shown when you hover a session row
+会话记录写到哪里	Where session records are written
+低	Low
+余额不足，请充值后重试	Insufficient balance; top up and retry
+余额暂时无法确认	Balance could not be confirmed
+余额未知（未配置查询接口）	Balance unknown (no query endpoint configured)
+余额查询失败	Balance check failed
+余额查询鉴权失败	Balance query authentication failed
+作用范围	Scope
+你点了「停下」；已经想到的内容展开可以看	You pressed Stop; what it had thought so far is inside
+你的第{n}条	Your message {n}
+你设的标题、置顶、归档	The title, pin and archive state you set
+使用	Use
+侧栏入口	Sidebar shortcuts
+保存到文件	Save to file
+保存失败，文件没有被改动	Saving failed; the file was not changed
+修改所选元素	Edit the picked element
+做完了	Done
+做完了 · 38 秒 · ¥0.23	Done · 38 s · ¥0.23
+停在无人回答的提问上	Stopped on a question nobody could answer
+停在第 {n} 步：{step}	Stopped at step {n}: {step}
+停止？	Stop?
+停止子代理	Stop subagent
+停止这一条	Stop this one
+先在对话或工作台里选中一段文字，就会出现在这里	Select text in the conversation or workbench first and it appears here
+先问我	Ask me
+全部停止	Stop all
+全部停止？	Stop all?
+全部添加	Add them all
+共 {n} 天中 · 日均 {avg} 次请求	of {n} days · {avg} requests a day
+关于	About
+关掉安装确认	Dismiss the install confirmation
+关掉就没了	Gone when closed
+关闭页签	Close tab
+其他机器	Other machines
+内容	Content
+再显示 {n} 条（共 {total} 条）	Show {n} more ({total} in all)
+最佳匹配	Best match
+最常改的	Most changed
+最常改的几项放这里，打开设置先看到它们	The few settings changed most often, first in view when settings opens
+最常改的几项放这里，打开设置先看到它们 · 这里是常用项的快捷入口，每项的完整位置在各自分类里	The few settings changed most often, first in view when settings opens · a shortcut here; each one also lives in its own category
+最近打开	Recently opened
+最近用过	Recently used
+写下要告诉另一个会话的话。派发开关开着时会直接交给那边的模型，关着时要对方的用户批准。	Write what to tell the other session. It goes straight to that session’s model while the dispatch switch is on; otherwise its user approves first.
+写在每个会话开头的身份说明	The identity note written at the start of every session
+写文件、跑命令前要不要先问	Whether to ask before writing files or running commands
+写新反馈	Write feedback
+出问题时附上的日志位置	Where the logs to attach when something goes wrong are
+到 {n} 自动压缩	auto-compacts at {n}
+到点让 Agent 只读地跑一遍并留下报告	Have the agent run a read-only pass on a schedule and leave a report
+勾选＝暂存；悬停文件头出「打开文件」「丢弃」；点差异里的行号打开这个文件。	Tick to stage; hover a file header for Open file and Discard; click a line number to open the file.
+协作	Collaboration
+历史索引还在建立，搜索结果可能不完整	The history index is still building; search results may be incomplete
+历史索引还在建立（{indexed}/{total}），搜索结果可能不完整	The history index is still building ({indexed}/{total}); search results may be incomplete
+压缩归档	Compaction archive
+原文：{text}	Original: {text}
+原项目的权限与目标设置不会跟着走，新项目按它自己的规则重新判断。不随会话移动的内容会从原项目移除。	What the old project allowed does not travel; the new project decides that by its own rules. What stays behind is removed from the old project.
+去设置开启预览	Turn preview on in Settings
+参考	Reference
+反馈等级 {level} · 已采纳 {n} 条	Feedback level {level} · {n} adopted
+反馈被采纳、等级提升时提示你	Tell you when feedback is adopted or your level rises
+发布修复	Fix ships
+发布到社区市场	Publish to the community market
+发给对话	Send to chat
+发给模型服务商的请求有多大	How large the requests sent to model providers are
+只列这台电脑上找得到的；默认用上次选的	Only what this computer has is listed; the one you chose last is the default
+只在这个项目	This project only
+只有本地网页文件可以在这里修改并保存	Only a page opened from a local file can be edited and saved here
+可用配额已耗尽	Available quota exhausted
+可能被删除或移动了	It may have been deleted or moved
+可读取代码、查找资料、运行工具并修改文件；每一步都能在执行过程里展开查看。	It can read code, research, run tools and edit files; every step can be opened in the run.
+各服务商自己的口径，含输出	Each provider's own count, output included
+同一个 Wi-Fi	Same Wi-Fi
+后台任务日志	Background-task logs
+后台作业	Background job
+向上滚就停在那里，点右边的箭头回到最新	Scrolled up, so it stays put; use the arrow to return to the latest
+向本机另一个 Reasonix 会话发送文字；派发开关开着时对方的模型会直接读到，关着时要对方用户批准，发送本身不授予任何权限。	Send text to another Reasonix session on this machine; with the dispatch switch on its model reads it directly, otherwise its user must approve first, and sending grants no permission.
+启用、停用、安装或更新后，从下一轮开始生效；正在跑的这一轮不受影响。改了扩展自己的代码，用「重载运行时」重新读取。	Enabling, disabling, installing or updating takes effect from the next turn; the one running is unaffected. After editing an extension's own code, use Reload runtime to read it again.
+启用、停用或更新后，从下一轮开始生效；正在跑的这一轮不受影响。	Enabling, disabling or updating takes effect from the next turn; the one running is unaffected.
+命令只能写工作区、临时目录和工具缓存	Commands can only write to the workspace, temp folders and tool caches
+和 {issue} 重复	Duplicate of {issue}
+和 #{n} 重复	Duplicate of #{n}
+和对话并排看网页	View web pages beside the chat
+哪里不对	Something is wrong
+回到会话时，在新回答前画一条分隔线	A divider before the new answer when you return to a session
+回到最新输出	Back to the latest output
+回到对话里那一组	Back to its group in the conversation
+回到当前项目	Back to the current project
+回复维护者…	Reply to the maintainers…
+回复里工具调用和思考默认收起，只留最后的结论	Tool calls and thinking fold by default, leaving the final answer
+在 {host} 上	On {host}
+在上方输入网址，和对话并排看资料。模型操作这个页面时，页签上会有蓝点。	Enter an address above to browse beside the chat. A blue dot on the tab shows when the model is operating this page.
+在内置浏览器打开	Open in the built-in browser
+在哪个项目里干活？	Which project will you work in?
+在外面也能连	From anywhere
+在对话里引用另一个会话时，最多带多少内容	How much a quoted conversation may carry in
+在工作台打开	Open in the workbench
+在工作台里预览 Word、Excel、PPT	Preview Word, Excel and PowerPoint in the workbench
+在工具调用前后运行你自己的命令	Run your own commands before and after tool calls
+在左边选一项，这里显示它的详情和操作。	Pick one on the left to see its details and what you can do with it.
+在手机上用 Studio	Use Studio on your phone
+在文件源码里找不到这个元素，它可能是脚本生成的	The element is not in the file's source; a script may have made it
+在跑 · {n}	Running · {n}
+在跑 · {time}	Running · {time}
+在输入框顶部显示文件改动	Show file changes at the top of the input box
+在这个项目的目录里打开你自己的终端	Open your own terminal in this project's folder
+在页面上点一个元素，按 Esc 取消	Click an element on the page; press Esc to cancel
+填 MCP 服务的命令或地址	An MCP server's command or address
+备份	Backup
+复制全部	Copy everything
+多少天没动的会话自动归档	How many idle days before a conversation is archived
+多模型	Many models
+大约 1 分钟 · key 只存在这台电脑上	About a minute · the key stays on this computer
+子代理同时改文件时各自能写的范围	What each sub-agent may write when several change files at once
+子代理的对话只读；要补充要求，在主对话里说，主会话会转达。	A subagent's conversation is read-only; say anything more in the main conversation and it will be passed on.
+子任务	Subtask
+字号	Font size
+它怎么想、怎么问你、怎么协作	How it thinks, how it asks you, how it works with others
+它提供	What it provides
+它的命令能写到哪里、能不能联网	Where its commands can write, and whether they can go online
+它能碰什么：批准、规则、沙箱、联网	What it can touch: approval, rules, sandbox, network
+它记住的东西：星系、遗忘、整理	What it remembers: constellations, forgetting, tidying
+它问你问题时，多久没人回答就自动跳过	How long an unanswered question waits before it is skipped
+安全问题请{link}	For security issues, {link}
+定位到第{a}至{b}条	Jump to messages {a} to {b}
+对	Right
+对话、规划、子代理、看图分别用哪个模型	Which model chat, planning, subagents and image reading each use
+对话显示	Conversation display
+对话本身	The conversation itself
+对话里显示什么、怎么折叠	What the conversation shows and how it folds
+对话里记录的路径保持原样	Paths recorded in the conversation are left as they were
+导出 CSV	Export CSV
+小米	Xiaomi
+展开{name}	Expand {name}
+展开侧栏	Expand sidebar
+差异太长，只显示了前一部分。	The diff is long; only its first part is shown.
+已保存到 {path}	Saved to {path}
+已修改 {m} 未跟踪 {u}	{m} modified · {u} untracked
+已停下	Stopped
+已启用	Enabled
+已在其他窗口处理	Handled in another window
+已复制 {text}	Copied {text}
+已完成 · {t}	Done · {t}
+已收到 {day}	Received {day}
+已淡忘	Faded
+已淡忘，自动想起时排在后面，仍能搜到	Faded: recalled after everything else, still searchable
+已登记 #{n}	Recorded #{n}
+已经找遍全部历史	Searched the whole history
+已结束 · {n}	Ended · {n}
+已连上 {name} · 找到 {n} 个模型	Connected to {name} · {n} models found
+已退出计划模式，可随时重新下达。	Plan mode is off. You can pick the plan up again at any time.
+已送到「{to}」，对方的模型会直接读到（派发开关关着时需对方用户批准）。	Delivered to “{to}”; its model reads it directly (it waits for its user only if the dispatch switch is off).
+常用	Common
+引用	Quote
+引用历史会话、会话间消息	Quoting past sessions and messages between sessions
+当前服务器不支持自动检测，请升级服务器后重试。	This server does not support automatic checks. Upgrade the server to use them.
+当前模型还没有 API key，发不出去	The selected model has no API key yet, so nothing can be sent
+当前版本、可用更新、回退	Current version, available updates, rolling back
+忘掉	Forget
+快捷键、标签、运行中发消息、性能	Shortcuts, tabs, sending while running, performance
+快淡忘了	Fading
+思考 {chars} · {secs} 秒	Thought · {chars} · {secs}s
+思考中 · {secs} 秒	Thinking · {secs}s
+思考到一半停下了 · {secs} 秒	Stopped while thinking · {secs}s
+思考到一半出错了 · {secs} 秒	Failed while thinking · {secs}s
+性能	Performance
+恢复备份	Restore a backup
+恢复字号	Default text size
+想要什么	Something you want
+我的消息	My messages
+截图会带上窗口里看到的东西（余额、会话标题、文件路径）。发出前在上面看一眼。	A screenshot carries whatever the window shows (balance, session titles, file paths). Look it over above before sending.
+所有快捷键，含全局显示 / 隐藏、Esc 停止	All shortcuts, including global show / hide and Esc to stop
+所有设置都是默认值	Every setting is the default
+所有项目	All projects
+手机怎么连过来	How the phone gets here
+手机扫码后可以看会话、发消息、批准操作	Scan with your phone to read conversations, send messages and approve actions
+打开文件	Open file
+打开模型列表时顺便检查连接和余额，不发送生成请求	Check connections and balances when the model list opens; no generation request is sent
+打开的终端太多了，先关掉几个	Too many terminals are open; close some first
+打开终端	Open the terminal
+扣除冷启动后命中	Hit after cold start
+执行中 · {machine}	Running · {machine}
+扩展范围	Extension scope
+批准	Approval
+找不到项目文件夹	Project folder not found
+找出最近的回归	Find the latest regression
+技能、外部工具、插件、自动化	Skills, external tools, plugins, automation
+技能和外部服务可以只对某个项目开关；这里选在为谁设置	Skills and external services can be switched for one project only; choose who you are setting them for
+把会话 JSON 文件拖到这里	Drop a session JSON file here
+把导出的乱码修一下	Fix the garbled export
+把执行轨迹导出给开发者排查	Export execution traces for a developer to look into
+把文件夹拖到这里	Drop a folder here
+把模型、扩展、记忆等配置加密导出成一个文件	Export models, extensions and memory to one encrypted file
+把这段回答引用到主输入框	Quote this answer in the main input
+按任务	Per task
+按原文显示	Shown as written
+按命令、路径写死的允许和拒绝；拒绝规则永远优先	Allow and deny by command or path; a deny rule always wins
+换一个…	Choose another…
+换机器时带走配置	Take your configuration to another machine
+排队中的消息	Queued messages
+接入外部服务	Connect an external service
+接哪个服务、每种用途用哪个模型、上下文怎么维护	Which service to use, which model for each purpose, how context is kept
+推荐 · 便宜	Recommended · low cost
+提问	Question
+插话 · 等待插入	Steer · waiting to land
+搜索、抓网页、内置浏览器	Search, page fetching and the built-in browser
+搜索会话与操作	Search sessions and actions
+搜索范围	Search scope
+搜索记忆	Search memory
+操作与性能	Controls and performance
+收到了，谢谢	Got it, thank you
+收起{name}	Collapse {name}
+收起的计划条上用小格子显示每一步的进度。默认显示，仅保存在本机。	Show each step's progress as segments on the collapsed plan strip. On by default; saved only on this machine.
+收起较早的内容	Fold the earlier content again
+改一下…	Edit…
+改为插话	Make it a steer
+改了{n}个文件	changed {n} files
+改动、提交历史和文件	Changes, history and files
+改动和提交历史需要 git	Changes and history need git
+改过的设置	Changed settings
+放到后台运行	Sent to the background
+放大字号	Larger text
+数据	Data
+整个工作区	Whole workspace
+文件与预览	Files and previews
+文件在你修改期间已变化，请重新点选后再改	The file changed in the meantime; pick the element again and retry
+文件太大，无法预览	Too large to preview
+文件已不在原处	The file is no longer there
+文件里有多个元素匹配，无法确定改哪一个	More than one element in the file matches, so it is unclear which to change
+文件里的文字和页面上显示的不一致，未做修改	The file's text differs from what the page shows; nothing was changed
+文字	Text
+文字和底色的对比	Contrast between text and background
+文字颜色	Text color
+新对话一开始用哪种模式	Which mode a new chat starts in
+新文件 · 点开看全部	New file · open to see it all
+新标签	New tab
+新版本 {v} 可用	Version {v} available
+新版本 {v} 已下载。	Version {v} is downloaded.
+新的	New
+无法读取检测设置，请检查连接或权限后重试。	Cannot read check settings. Check your connection or permissions and try again.
+旧版迁移过来的会话是否出现在侧栏	Whether sessions migrated from 1.x show in the sidebar
+早先版本（{n}）	Earlier versions ({n})
+明暗、配色、字体、壁纸	Light or dark, colours, fonts, wallpaper
+星系	Galaxy
+暂不做	Won't fix
+暂时限流	Rate limited
+更多：{name}	More for {name}
+更多：复制全部、字体大小	More: copy everything, text size
+更多：编辑、测试连接、在侧栏隐藏、移除 {name}	More for {name}: edit, test, hide from the rail, remove
+更多工具	More tools
+更多选项…	More options…
+更早	Earlier
+更早的 {n} 项	{n} earlier steps
+更早还有{n}条，点击加载	{n} earlier messages — click to load
+有 {n} 项和默认值不同	{n} differ from the defaults
+有些历史内容没能索引，搜索结果可能不完整	Some history could not be indexed; search results may be incomplete
+有些模糊，再被用到就会变清晰	A little fuzzy; using it again makes it clear
+有新回复	New replies
+有的网站不允许嵌入，可以用右上角在系统浏览器打开。	Some sites do not allow embedding; use the toolbar button to open them in your system browser.
+服务	Services
+服务商报告的合计	Total the provider reported
+服务商要求付费，请检查账户	Payment required; check your account
+服务地址已按 {name} 填好（{host}），选「中转站 / 自建」时才需要自己填。	The address is filled in for {name} ({host}); you type one only for a relay or self-hosted service.
+未保存	Unsaved
+未归类	No galaxy
+未能保存记忆设置：{detail}	The memory setting could not be saved: {detail}
+未能保存该条记忆：{detail}	That memory could not be saved: {detail}
+未跟踪	Untracked
+未跟踪的文件 · 点开看内容	Untracked file · open to see it
+未配置 API 密钥	API key not configured
+本会话的子代理	This session's subagents
+本会话预计在 {n} tokens 左右自动整理上下文。	This session should tidy its context automatically at around {n} tokens.
+本页包含	On this page
+本页设置默认：本机，立即生效；例外的在名字旁标出	Settings here apply on this machine at once; exceptions are marked beside the name
+权限与安全	Permissions and safety
+松手就选这个文件夹	Let go to choose this folder
+查找范围	Search scope
+查看	View
+查看归档说明	See the archive note
+查看被折叠的内容	Show the folded content
+标签与导航	Tabs and navigation
+根目录	Project root
+格式	Format
+检查点（回退快照）	Checkpoints (rewind snapshots)
+检测中	Checking
+模型主动记事	Model remembers on its own
+模型用 open_projects 把本项目目录下的子文件夹加为项目时，直接添加并标为可信，不再弹确认卡；项目之外的文件夹仍然会询问。被信任的文件夹里的配置可以运行程序，请只在你信任这个仓库时开启。	When the model adds a subfolder of this project as a project with open_projects, it is added and trusted without a card; folders outside the project still ask. A trusted folder's configuration can run programs, so turn this on only for a repository you trust.
+欢迎使用 Reasonix	Welcome to Reasonix
+正在{what}	Now: {what}
+正在做：{step}	Working on: {step}
+正在将 {n} 条消息归档	Archiving {n} messages
+正在归档较早的内容	Archiving earlier content
+正在检测连接与余额…	Checking connection and balance…
+正在管理 {name} 的扩展，不是当前会话所在的项目。	Managing the extensions of {name}, not the project this session is in.
+正在验证 key，读取可用模型…	Checking the key and reading its models…
+每个会话都能在输入框里临时换模型；这里只定默认。	Any conversation can switch models from the composer; this only sets the default.
+每做完一步要不要说一句在干什么	Whether to say a line about what each step did
+每次	Every time
+每次都带上	Carried every turn
+毛玻璃、光晕等视觉效果	Frosted glass, glow and other effects
+没有匹配的会话、设置或操作	Nothing matches
+没有开启 Office 文档预览	Office document preview is off
+没有改动	No changes
+没有符合的记忆。	No memories match.
+没有等你确认的记忆。	Nothing is waiting for you to confirm.
+没有系统沙盒，执行前都会先问你	No OS sandbox, so commands ask first
+没能打开终端：{why}	Could not open a terminal: {why}
+没错	That's right
+沿用已有结果	Reused an earlier result
+浏览别人分享的插件	Browse what others share
+浏览器标签 · {name}	Browser tab · {name}
+添加…	Add…
+添加图片	Add images
+添加项目	Add a project
+清屏	Clear
+清晰	Clear
+清晰，不会变淡	Clear, and it never fades
+清晰，约 {n} 天后才会变模糊	Clear for about {n} more days
+清除筛选	Clear filter
+滚轮缩放 · 拖动平移 · Esc 关闭	Scroll to zoom · drag to pan · Esc to close
+点一类展开其中最大的几项	Open a class for its largest items
+点一行在工作台打开	Select a row to open it in the workbench
+点击跳过去 · 右键加星标	Click to jump · right-click to star
+点选页面元素	Pick an element on the page
+照抄网页或工具结果里的文字去调用工具前先问你	Ask before a call that copies text from a web page or tool result
+版本与诊断	Version and diagnostics
+现在没有在运行的东西	Nothing is running
+现在用了	In use now
+生成的文件显示成可以点开的卡片	Generated files appear as cards you can open
+生效	Applies
+用当前模型改写；采用前不会替换原文	Rewritten with the current model; your text stays until you adopt it
+用手机访问这台电脑上的会话，含通知设置	Reach this computer's sessions from a phone, with notification settings
+用过	Used
+用途与上下文	Uses and context
+界面语言	Interface language
+登录后把配置备份到云端	Back up your configuration to the cloud once signed in
+登记为 {issue}	Recorded as {issue}
+直接记	Just remember
+相关时才会用到	Used when relevant
+看到值得长期记的事时怎么办	What to do when something is worth keeping
+看完整输出	See full output
+看输出	View output
+确定停止后台任务：{cmd}	Confirm stopping background task: {cmd}
+社区与贡献者、赞助在这里展示，不是开关。	The community, contributors and sponsorship are shown here; they are not switches.
+社区发帖、崩溃跟进时用；与模型密钥无关	Used for community posts and crash follow-up; unrelated to model keys
+离线	Offline
+第 {a}–{b} 行	Lines {a}–{b}
+第 {n} / {total} 步	Step {n} of {total}
+第 {n} 步	Step {n}
+第 {n} 行	Line {n}
+第{a}至{b}条	Messages {a} to {b}
+等你回复	Needs your reply
+等你处理	Needs you
+等你定	Your call
+等你确认	Needs you
+等写入名额	Waiting for a writer slot
+等并发名额	Waiting for a free slot
+等待上游	Waiting on upstream
+等待中	Waiting
+等待太久，点选已取消	Picking timed out and was cancelled
+等被占用的写入路径	Waiting for a write path someone holds
+简体中文	简体中文
+简化显示	Simplified view
+管理 MCP	Manage MCP
+管理哪个项目的扩展	Manage extensions for which project
+系统人设和 Agent 预设	The system persona and agent presets
+约束	Constraints
+细项	Details
+终端 {n}	Terminal {n}
+终端没能启动	The terminal could not start
+终端程序	Shell
+终端输出	Terminal output
+终端里的程序已经结束，重新启动后再输入	The shell has ended; restart it before typing
+结束并关闭	End and close
+结束的保留到会话关闭，或你点「清除」	Ended jobs stay until the session closes, or until you clear them
+给改动写测试	Write tests for the changes
+继续规划	Still planning
+缓存命中 {rate}% · 命中按缓存价计费	{rate}% from cache · billed at the cache rate
+编辑人设	Edit persona
+缩小字号	Smaller text
+缺少密钥	Missing key
+网络、远程机器、手机	Network, remote machines, phone
+网页在后台闲置多久后休眠	How long a background page idles before it sleeps
+美团	Meituan
+联网	Network
+背景色	Background
+自动检测连接与余额	Automatically check connections and balances
+自己写的插件	A plugin you wrote
+自己填地址	Type the address
+范围	Scope
+被搁置，尚未开始	Held back, not started
+要不要在后台检查、下载新版本；重启始终由你决定	Whether to check for and download new versions in the background; restarting is always your call
+要开浏览器或终端,点上方标签栏的 +。	For a browser or a terminal, use + in the tab bar above.
+要记住吗	Remember this?
+要记的内容	What to remember
+解释这个项目的结构	Explain this project's structure
+计划 · 第 {n} / {total} 步	Plan · step {n} of {total}
+计划与提问	Plans and questions
+计划做好后要不要先给你看	Whether a finished plan is shown to you before it runs
+计划怎么批、提问等多久、什么算完成	How plans are approved, how long questions wait, what counts as done
+订阅套餐（估算）	Subscription estimate
+让一个会话给另一个会话发消息（实验）	Let one session send another a message (experimental)
+让它在内置浏览器里打开网页、点按钮、截图	Let it open pages, click and take screenshots in the built-in browser
+记住	Remember
+记忆、用量、存储、备份	Memory, usage, storage, backup
+记忆与用量	Memory and usage
+记忆分类	Memory categories
+试试关掉「区分大小写」	try turning off Match case
+试试关掉正则	try turning off regular expressions
+试试把范围改成「全部」	try setting the scope to All
+请求暂时被限流，请稍后重试	Temporarily rate limited; retry later
+读取进程列表失败：{detail}	Could not read the process list: {detail}
+调整文件树宽度	Resize the file tree
+账号、版本、日志、社区	Account, version, logs, community
+账号与关于	Account and About
+费用用什么币种显示	Which currency costs are shown in
+资源管理器：改动、提交历史和文件	Explorer: changes, history and files
+跑命令用哪个程序	Which program runs a command
+跑完了，退出 {code}	Finished, exit {code}
+距上次折叠新增的内容太少，不值得再折叠一次	Too little has been added since the last fold to be worth another one
+跟着最新输出	Following the latest output
+跟随系统、浅色或深色	Follow the system, light or dark
+跳到卡片 ↑	Back to the card ↑
+跳转被拒	Redirect refused
+较早的 {n} 条消息已归档	{n} earlier messages archived
+较早的内容会归档成文件，模型自己读回需要的部分；完整对话记录会保留，随时能展开看。	Earlier content is archived to a file the model reads back as needed. The full conversation is kept and can be expanded any time.
+较早的内容会归档成文件，模型自己读回需要的部分；完整对话记录会保留。	Earlier content is archived to a file the model reads back as needed. The full conversation will be preserved.
+较早的内容已归档	Earlier content archived
+输入 · 命中缓存	Input · cache hit
+输入 · 未命中	Input · cache miss
+输入、输出、费用，按天和按模型看	Input, output and cost, by day and by model
+输入与提醒	Input and reminders
+输入框里的提示文字	The hint text inside the composer
+输入框顶部显示「n 个文件已更改」	Show “n files changed” at the top of the composer
+输出 ÷ 输入	output ÷ input
+输出比	Output ratio
+过程	Process
+运行中也可以继续输入…	You can keep typing while it runs…
+运行中发出的消息默认怎么处理	What a message sent while a task runs does by default
+返回工作区	Back to workspace
+还没有 key？去 {name} 获取	No key yet? Get one from {name}
+还没有连接模型服务，发不出去	No model service is connected, so nothing can be sent
+还没被想起过	Not recalled yet
+这一条带着 1.x 排队的图片，这个版本读不了，所以先停住，没有去掉图片照发	This entry was queued with images by Reasonix 1.x that this build cannot read, so it was held instead of being sent without them
+这一轮出错了；已经想到的内容展开可以看	The turn failed; what it had thought so far is inside
+这个 Windows 版本不支持内置终端（需要 Windows 10 1809 或更高版本）	The built-in terminal needs Windows 10 version 1809 or later
+这个值不能写进样式	That value cannot be written into a style
+这个元素里还有别的元素，只能改颜色和字号，不能改文字	This element contains other elements; only its colors and size can be changed, not its text
+这个文件不在当前工作区里，不能保存	This file is outside the current workspace and cannot be saved
+这个文件的结构无法可靠对应到页面，未做修改	The file's structure cannot be matched to the page reliably; nothing was changed
+这个终端已经不在了	That terminal is no longer open
+这个终端里还有命令在运行，关闭会结束它。	A command is still running in this terminal; closing it ends the command.
+这台机器上没有这个终端程序	That shell is not on this machine
+这是你自己的终端：以你的身份运行，不经过模型的权限和沙盒。模型看不到这里，除非你把内容发给它。	This is your own terminal: it runs as you, outside the model's permissions and sandbox. The model cannot see it unless you send it something.
+这次会话改了哪些文件	Which files this session changed
+这段排版没能显示，内容一字不少	This layout could not be shown; nothing is missing
+进程	Processes
+进程已退出（代码 {code}）	The process exited (code {code})
+连接一个模型服务	Connect a model service
+连接一个模型服务，选好默认模型，就可以在项目里开始对话。	Connect a model service and pick a default model, then start a conversation in a project.
+连接其他机器上的 Reasonix	Connect to Reasonix on other machines
+连接异常	Connection failed
+连接异常，请检查网络或服务商	Connection failed; check network or provider
+连接待确认	Unconfirmed
+连接方式	Transport
+连接检测超时，请稍后重试	Connection check timed out; retry later
+连接模型	Connect a model service
+连接正常	Connected
+连接正常，模型调用未验证	Connection reachable; model calls unverified
+连接状态尚未确认	Connection status unconfirmed
+连接超时	Timed out
+连接跳转被拒绝，请检查地址	Redirect refused; check the address
+连接鉴权失败，请检查密钥或权限	Authentication failed; check key or permissions
+连续多轮没有进展时暂停并提醒你	Pause and tell you when several rounds make no progress
+退出 {code}	Exit {code}
+退出目标	End goal
+选一个默认模型	Pick a default model
+选一家，填上 key 就能用。以后可以再加别的。	Pick one and fill in the key. You can add others later.
+选择图标栏与侧栏工具卡片显示的入口和顺序	Choose the entries and order for the icon rail and sidebar tools card
+选择文件夹…	Choose a folder…
+选择终端程序	Choose a shell
+选默认模型	Choose the default model
+都不是	None of these
+配额耗尽	Quota exhausted
+重启后使用，不会自动重启。	Restart to use it; Studio never restarts by itself.
+重新启动	Restart
+重要度	Importance
+钩子	Hooks
+鉴权失败	Auth failed
+附图	Attach image
+需要付费	Payment required
+需要登录账号	Needs you signed in
+页码	Page number
+页面不在眼前，点选已取消	The page is not on screen, so picking was cancelled
+页面已跳转或重新加载，点选已取消	The page navigated or reloaded, so picking was cancelled
+页面里已经找不到这个元素	The element can no longer be found on the page
+预算用尽	Out of budget
+高	High
+默认关闭。开启后，打开模型列表会使用已保存密钥检查已授权的全局连接和余额，不发送生成请求。	Off by default. When enabled, opening the model picker uses saved keys to check authorized global connections and balances, without generation requests.

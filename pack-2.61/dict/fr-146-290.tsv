@@ -1,0 +1,145 @@
+146	Uniquement ce projet
+147	Seule une page ouverte depuis un fichier local peut être modifiée et enregistrée ici
+148	Quota disponible épuisé
+149	Il a peut-être été supprimé ou déplacé
+150	Il peut lire le code, chercher des informations, lancer des outils et modifier des fichiers ; chaque étape se déplie dans le déroulé.
+151	Le décompte propre à chaque fournisseur, sorties comprises
+152	Même Wi-Fi
+153	Journaux des tâches en arrière-plan
+154	Tâche en arrière-plan
+155	En remontant, la vue reste sur place ; la flèche à droite ramène au plus récent
+156	Envoyer du texte à une autre session Reasonix de cet ordinateur ; si l'interrupteur d'envoi est activé, le modèle destinataire le lit directement, sinon son utilisateur approuve d'abord ; l'envoi lui-même n'accorde aucune permission.
+157	L'activation, la désactivation, l'installation ou la mise à jour prennent effet au tour suivant ; le tour en cours n'est pas affecté. Après avoir modifié le code d'une extension, utilisez « Recharger l'exécution » pour le relire.
+158	L'activation, la désactivation ou la mise à jour prennent effet au tour suivant ; le tour en cours n'est pas affecté.
+159	Les commandes ne peuvent écrire que dans l'espace de travail, les dossiers temporaires et les caches d'outils
+160	Doublon de {issue}
+161	Doublon de #{n}
+162	Voir des pages web à côté de la conversation
+163	Qu'est-ce qui ne va pas
+164	Une ligne de séparation avant la nouvelle réponse quand vous revenez à une session
+165	Revenir à la sortie la plus récente
+166	Revenir à son groupe dans la conversation
+167	Revenir au projet en cours
+168	Répondre aux mainteneurs…
+169	Dans les réponses, les appels d'outils et la réflexion sont repliés par défaut, seule la conclusion reste
+170	Sur {host}
+171	Saisissez une adresse ci-dessus pour consulter une page à côté de la conversation. Un point bleu sur l'onglet signale que le modèle agit sur cette page.
+172	Ouvrir dans le navigateur intégré
+173	Dans quel projet voulez-vous travailler ?
+174	Accessible de partout
+175	Quelle quantité de contenu une session citée peut apporter dans la conversation
+176	Ouvrir dans l'atelier
+177	Prévisualiser Word, Excel et PowerPoint dans l'atelier
+178	Lancer vos propres commandes avant et après les appels d'outils
+179	Choisissez un élément à gauche pour voir ses détails et les actions possibles.
+180	Utiliser Studio sur téléphone
+181	Cet élément est introuvable dans le source du fichier ; un script l'a peut-être créé
+182	En cours · {n}
+183	En cours · {time}
+184	Afficher les modifications de fichiers en haut de la zone de saisie
+185	Ouvrir votre propre terminal dans le dossier de ce projet
+186	Cliquez un élément sur la page ; Échap pour annuler
+187	La commande ou l'adresse d'un service MCP
+188	Sauvegarde
+189	Tout copier
+190	Nombre de jours d'inactivité avant qu'une conversation soit archivée
+191	Modèles multiples
+192	Environ une minute · la clé ne quitte pas cet ordinateur
+193	Ce que chaque sous-agent peut écrire quand plusieurs modifient des fichiers en même temps
+194	La conversation d'un sous-agent est en lecture seule ; pour ajouter des consignes, dites-le dans la conversation principale, elle les transmettra.
+195	Sous-tâche
+196	Taille de police
+197	Comment il réfléchit, comment il vous demande, comment il collabore
+198	Ce qu'il fournit
+199	Où ses commandes peuvent écrire, et si elles ont accès au réseau
+200	Ce qu'il peut toucher : approbations, règles, bac à sable, réseau
+201	Ce qu'il retient : galaxies, oubli, rangement
+202	Combien de temps une question attend une réponse avant d'être ignorée
+203	Pour les questions de sécurité, {link}
+204	Aller aux messages {a} à {b}
+205	Exact
+206	Quel modèle pour la conversation, la planification, les sous-agents et la lecture d'images
+207	Affichage de la conversation
+208	La conversation elle-même
+209	Ce que la conversation montre et comment elle se replie
+210	Les chemins enregistrés dans la conversation restent tels quels
+211	Exporter en CSV
+212	Xiaomi
+213	Déplier {name}
+214	Déplier la barre latérale
+215	La différence est trop longue ; seule la première partie est affichée.
+216	Enregistré dans {path}
+217	{m} modifiés · {u} non suivis
+218	Arrêté
+219	Activé
+220	Traité dans une autre fenêtre
+221	{text} copié
+222	Terminé · {t}
+223	Reçu le {day}
+224	Estompé
+225	Estompé : rappelé après tout le reste, toujours trouvable
+226	Enregistré #{n}
+227	Tout l'historique a été parcouru
+228	Terminé · {n}
+229	Connecté à {name} · {n} modèles trouvés
+230	Le mode plan est désactivé. Vous pouvez le reprendre à tout moment.
+231	Remis à « {to} » ; son modèle le lit directement (si l'interrupteur d'envoi est désactivé, son utilisateur approuve d'abord).
+232	Courants
+233	Citer
+234	Citer des sessions passées et des messages entre sessions
+235	Ce serveur ne prend pas en charge la vérification automatique. Mettez-le à niveau puis réessayez.
+236	Le modèle sélectionné n'a pas encore de clé API, rien ne peut être envoyé
+237	Version actuelle, mises à jour disponibles, retour arrière
+238	Oublier
+239	Raccourcis, onglets, envoi pendant l'exécution, performances
+240	S'estompe
+241	Réflexion · {chars} · {secs} s
+242	Réflexion en cours · {secs} s
+243	Arrêté en pleine réflexion · {secs} s
+244	Erreur en pleine réflexion · {secs} s
+245	Performances
+246	Restaurer une sauvegarde
+247	Taille de texte par défaut
+248	Ce que vous voulez
+249	Mes messages
+250	La capture emporte ce que la fenêtre montre (solde, titres de session, chemins de fichiers). Vérifiez-la ci-dessus avant l'envoi.
+251	Tous les raccourcis, y compris affichage / masquage global et Échap pour arrêter
+252	Tous les réglages sont aux valeurs par défaut
+253	Tous les projets
+254	Comment le téléphone se connecte
+255	Scannez avec votre téléphone pour lire les conversations, envoyer des messages et approuver des actions
+256	Ouvrir le fichier
+257	Vérifier les connexions et les soldes à l'ouverture de la liste des modèles, sans envoyer de requête de génération
+258	Trop de terminaux ouverts ; fermez-en quelques-uns
+259	Ouvrir le terminal
+260	Cache après déduction du démarrage à froid
+261	En cours · {machine}
+262	Portée de l'extension
+263	Approbation
+264	Dossier du projet introuvable
+265	Trouver la régression la plus récente
+266	Skills, outils externes, extensions, automatisation
+267	Les skills et services externes peuvent s'activer projet par projet ; choisissez ici pour qui vous réglez
+268	Déposez ici un fichier JSON de session
+269	Réparer l'export illisible
+270	Exporter les traces d'exécution pour un développeur
+271	Déposez un dossier ici
+272	Exporter modèles, extensions et mémoire dans un seul fichier chiffré
+273	Citer cette réponse dans la zone de saisie principale
+274	Par tâche
+275	Afficher tel quel
+276	Autorisations et refus fixés par commande ou par chemin ; une règle de refus l'emporte toujours
+277	En choisir un autre…
+278	Emporter sa configuration sur une autre machine
+279	Messages en attente
+280	Connecter un service externe
+281	Quel service utiliser, quel modèle pour chaque usage, comment le contexte est entretenu
+282	Recommandé · économique
+283	Question
+284	Intervention · en attente
+285	Recherche, récupération de pages, navigateur intégré
+286	Rechercher sessions et actions
+287	Portée de la recherche
+288	Rechercher dans la mémoire
+289	Contrôles et performances
+290	Bien reçu, merci

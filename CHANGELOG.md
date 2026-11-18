@@ -9,6 +9,29 @@ The French version of this file is [`CHANGELOG.fr.md`](CHANGELOG.fr.md).
 
 ---
 
+## [2.61.0] — 2026-11-18
+
+French localisation updated for **Reasonix Studio 2.61**, with three fixes driven by
+daily use: pasted attachments, the microphone key, and the OpenCode bridge.
+
+### Added
+
+- **Attachment paste fix** (`tools/patch-collage.mjs`): a screenshot pasted into the
+  composer is no longer rejected. The server required a file extension; a capture
+  arrives with an incomplete name. The fix derives the extension from the MIME type.
+  Drag-and-drop is unaffected: it references a path, and already worked.
+- **OpenCode bridge** (`opencode-bridge/`): exposes OpenCode's free quota as a local
+  OpenAI-compatible provider, on port 31416.
+
+### Changed
+
+- **The microphone now reads `data/home/.env` first**, falling back to the encrypted
+  `mic-keys.bin` vault only when the variable is absent. The key can therefore be typed
+  into the provider settings, like any other, without losing keys already stored in the
+  vault.
+
+---
+
 ## [2.52.1] — 2026-10-27
 
 The French translation now ships with a **genuinely usable microphone**. This release adds a
